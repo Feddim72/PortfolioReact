@@ -1,0 +1,166 @@
+@media only screen and (max-width: 1440px) {
+    .my-works > div {
+        margin-left: 16%;
+    }
+
+    .my-works .circle_01 {
+        top: 26%;
+        left: 46%;
+    }
+
+    .my-works .circle_01 img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .my-works > div {
+        margin-left: 13%;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+
+    .my-works__portfolio .portfolio-block {
+        width: 430px;
+    }
+
+}
+
+@media only screen and (max-width: 1246px) {
+
+    .my-works__portfolio .portfolio-block {
+        width: 400px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .my-works > div {
+        margin-left: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .my-works > div {
+        margin-left: 6%;
+    }
+
+}
+
+@media only screen and (max-width: 931px) {
+    .my-works__portfolio {
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (max-width: 915px) {
+
+    .my-works > div {
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .my-works > div {
+        margin-left: 6%;
+    }
+
+    .my-works > div:first-of-type {
+        max-width: 620px;
+    }
+
+    .my-works__portfolio a img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .my-works__portfolio .portfolio-block > div 
+    div:nth-child(1) {
+        padding: 5% 2% 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .my-works .my-works__portfolio {
+        margin-left: 0;
+    }
+
+    .my-works__portfolio {
+        justify-content: center;
+    }
+
+    .my-works .my-works__portfolio .portfolio-block {
+        margin: 0 10px 32px;
+    }
+
+    .my-works__portfolio .portfolio-block {
+        width: 416px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .my-works {
+        padding-left: 1.5%;
+    }
+
+    .my-works > div:first-of-type {
+        max-width: 320px;
+    }
+
+    .my-works .circle_01 {
+        top: 19%;
+        left: 5%;
+    }
+
+    .my-works__portfolio .portfolio-block {
+        margin-bottom: 30px;
+    }
+
+    .my-works__portfolio .portfolio-block:nth-child(3),
+    .my-works__portfolio .portfolio-block:nth-child(4),
+    .my-works__portfolio .portfolio-block:nth-child(5) {
+        display: none;
+    }
+
+    .portfolio-button {
+        display: flex;
+    }
+
+    .portfolio-button button {
+        border: none;
+        text-align: center;
+        background: #F0CAAC;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 330%;
+        width: 202px;
+        height: 40px;
+        box-shadow: 3px 3px 9px -2px rgb(140 140 140);
+        border-radius: 6px;
+        transition: .15s;
+        cursor: pointer;
+        margin-bottom: 4%;
+    }
+
+    .portfolio-button button:hover {
+        background:#ebc3a5;
+        transition: .15s;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .my-works {
+        padding-left: 0;
+    }
+}
