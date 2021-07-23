@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1440px) {
+
+    .contact > div {
+        margin-left: 5%;
+    }
+
+    .contact .contact__autor {
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    .contact__name {
+        max-width: 322px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+        min-height: 330px;
+        padding-top: 8%;
+    }
+
+    .contact .contact__autor {
+        width: 433px;
+    }
+
+    .contact__name div:first-of-type {
+        height: 344px;
+    }
+
+    form button {
+        width: 130px;
+        height: 51px;
+        background-size: 460%;
+    }
+
+    .contact__mail {
+        width: 264px;
+        height: 92px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .contact {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        max-height: 1400px;
+    }
+
+    .contact > div {
+        margin-left: 10%;
+        width: 90%;
+    }
+
+    .contact .contact__autor {
+        position: relative;
+        margin-top: 6%;
+        margin-right: 0;
+        margin-left: 32%;
+    }
+
+    .contact__autor 
+    .contact__name div:nth-child(2) {
+        margin-top: 6%;
+    }
+
+    .contact__name div:first-of-type {
+        height: 400px;
+    }
+
+    .contact__mail {
+        position: absolute;
+        width: 292px;
+        height: 95px;
+        right: 77%;
+        bottom: 75%;
+    }
+
+    .contact__circle_03 {
+        top: 82.5%;
+        width: 43%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contact > div {
+        margin-left: 7%;
+        width: 90%;
+    }
+
+    .contact .contact__autor {
+        position: relative;
+        margin-top: 0%;
+        margin-right: 0;
+        margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+
+    .contact__mail {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        max-width: 370px;
+        width: 100%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .contact .contact__autor {
+        align-items: center;
+        margin: 4% 2% 0;
+    }
+
+    .contact__name > div div:nth-child(1) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__autor 
+    .contact__name div:nth-child(2) {
+        max-width: 370px;
+    }
+
+    .contact__autor 
+    .contact__name div:nth-child(2) {
+        text-align: center;
+        margin-top: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contact > div {
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact__autor {
+        margin-top: 4%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .contact > div div:nth-child(1) {
+        max-width: 44vh;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    .contact form div:nth-child(1) {
+        max-width: 45vh;
+    }
+
+    .contact form div:nth-child(2) {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+}

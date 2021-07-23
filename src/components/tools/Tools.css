@@ -1,0 +1,48 @@
+.tools {
+    position: relative;
+    min-height: 345px;
+    background-image: url(../../assets/elements/tło_gradient.png);
+}
+
+.tools h2,
+.tools h3, 
+.tools__block {
+    margin: 0 0 0 13%;
+}
+
+.tools__block {
+    position: relative;
+    padding-top: 15px;
+    display: flex;
+    max-width: 1044px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tools h2 {
+    padding-top: 34px;
+}
+
+.tools__block > div {
+    background-color: white;
+    font-size: 13px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 50%;
+    border-radius: 6px;
+    box-shadow: 3px 3px 9px -2px rgb(140 140 140);
+}
+
+.tools .circle_01 {
+    position: absolute;
+    width: 29%;
+    left: 70%;
+    top: 17%;
+}
