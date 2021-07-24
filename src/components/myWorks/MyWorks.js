@@ -10,8 +10,8 @@ import bit_bucket_icon from '../../assets/ico/bit_bucket_icon.png';
 import external_link_icon from '../../assets/ico/external_link_icon.png';
 import circle_01 from '../../assets/circle/koła_01.png';
 
-import './MyWorks.css';
-import './MyWorks.media.css';
+// import './MyWorks.css';
+// import './MyWorks.media.css';
 import MyWorksBlock from "./MyWorksBlock";
 
 const portfolioState = {

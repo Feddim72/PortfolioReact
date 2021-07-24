@@ -5,8 +5,8 @@ import circle_03_pool from '../../assets/circle/koła_03_pool.png';
 import mail_icon from '../../assets/ico/mail.svg';
 import avatarContact from '../../assets/avatar/avatarContact.jpg';
 
-import './Contact.css';
-import './Contact.media.css';
+// import './Contact.css';
+// import './Contact.media.css';
 
 
 
