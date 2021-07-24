@@ -1,5 +1,5 @@
-import './App.css';
-import HomePage from './page/HomePage';
+import './styles/themes/default/theme.scss'
+import HomePage from './page/HomePage'
 
 const App = () => {
   return (
