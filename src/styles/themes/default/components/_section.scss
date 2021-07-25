@@ -232,7 +232,7 @@ nav {
     }
 
     #label__img {
-        margin-bottom: -$space-1P;
+        margin-bottom: $space_-1P;
         display: flex;
     }
 }
@@ -376,7 +376,7 @@ img:nth-child(1) {
 .info {
     position: relative;
     width: 53%;
-    margin: $space-5P 0 0 -$space-7P;
+    margin: $space-5P 0 0 $space_-7P;
 }
 
 .info__title {
@@ -630,7 +630,7 @@ div a:first-child:hover{
 }
 
 .about__skills-name .php {
-    width: 24%;
+    width: 20%;
     min-width: 112px;
 }
 
@@ -679,7 +679,7 @@ div a:first-child:hover{
 
 
 // ContentMedia ----------------------------------
-
+ 
 
 @media only screen and (max-width: 1600px) {
     .about__skills {
@@ -888,7 +888,7 @@ div a:first-child:hover{
     .info {
         max-width: 522px;
         margin-top: $space-4P;
-        margin-left: -$space-6P;
+        margin-left: $space_-6P;
     }
 
     .info__title {
@@ -924,7 +924,7 @@ div a:first-child:hover{
     .about {
         display: flex;
         flex-direction: column;
-        margin-top: -$space-12P;
+        margin-top: $space_-12P;
     }
 
     .about__me  {
@@ -1301,7 +1301,7 @@ div a:first-child:hover{
 @media only screen and (max-width: 329px) {
 
     .content__conteiner {
-        margin-top: $space-86P;
+        margin-top: $space-90P;
     }
 
     .info__but button {
@@ -1412,6 +1412,160 @@ div a:first-child:hover{
 // ContentMedia ----------------------------------
 
 
+
+// Tools -----------------------------------------
+
+
+.tools {
+    position: relative;
+    min-height: 345px;
+    background-image: url(../../../../assets/elements/tło_gradient.png);
+}
+
+.tools h2,
+.tools h3, 
+.tools__block {
+    margin: 0 0 0 $space-12P;
+}
+
+.tools__block {
+    position: relative;
+    padding-top: $space-xl-small;
+    display: flex;
+    max-width: 1050px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tools h2 {
+    padding-top: $space-medium-38;
+}
+
+.tools__block > div {
+    background-color: $c-white;
+    font-size: 13px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: $space-x-small;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 50%;
+    border-radius: 6px;
+    box-shadow: 3px 3px 9px -2px $c-Gray;
+}
+
+.tools .circle_01 {
+    position: absolute;
+    width: 29%;
+    left: 70%;
+    top: 17%;
+}
+
+// Tools -----------------------------------------
+
+
+// ToolsMedia ------------------------------------
+
+
+@media only screen and (max-width: 1220px) {
+
+    .tools {
+        min-height: 450px;
+    }
+
+    .tools__block {
+        width: 70%;
+        max-width: 1000px;
+    }
+
+    .tools__block > div {
+        margin-right: $space-6P;
+        margin-bottom: $space-4P;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+
+    .tools__block {
+        width: 80%;
+    }
+
+    .tools h2, .tools h3, .tools__block {
+        margin: 0 0 0 $space-8P;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+
+    .tools__block {
+        width: 90%;
+    }
+
+    .tools h2, .tools h3, .tools__block {
+        margin: 0 0 0 $space-6P;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .tools__block {
+        width: 78%;
+    }
+
+    .tools__block > div {
+        margin-right: $space-4P;
+    }
+
+    .tools .circle_01 {
+        left: 42%;
+        top: -10%;
+        width: 42%;
+    }
+
+}
+
+@media only screen and (max-width: 524px) {
+
+    .tools h2, .tools h3, .tools__block {
+        margin: 0 $space-10P 0;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .tools .circle_01 {
+        top: 4%;
+    }
+
+    .tools__block > div {
+        background-size: 62%;
+    }
+
+}
+
+@media only screen and (max-width: 335px) {
+
+    .tools__block > div {
+        width: 110px;
+        height: 110px;
+        background-size: 62%;
+    }
+}
+
+
+// ToolsMedia ------------------------------------
+
+
+
+
+
 // MyWorks ---------------------------------------
 
 
@@ -1454,13 +1608,13 @@ div a:first-child:hover{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 $space-medium-38 $space-medium-55;
+    margin: 0 $space-medium-38 $space-medium-55 0;
     background: $c-white;
 }
 
 .portfolio-effect {
     display: none;
-    background-color: $c-MandysPink;
+    background-color: $c-MandysPinkOpacity70;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1987,12 +2141,12 @@ form button:hover {
     height: 370px;
     display: flex;
     justify-content: flex-end;
-    margin-top: $space-15P;
+    margin-top: $space-2P;
 }
 
 .contact__autor .contact__name div:nth-child(2) {
     text-align: end;
-    margin-top: $space-15P;
+    margin-top: $space-2P;
 }
 
 .contact__name img {
