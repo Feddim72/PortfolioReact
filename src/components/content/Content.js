@@ -12,8 +12,8 @@ import dev_icon from '../../assets/ico/dev_icon.png';
 import easy_code_button from '../../assets/ico/easy_code_button.png';
 import avatarContent from '../../assets/avatar/avatarContent.jpg';
 
-import './Content.css';
-import './Content.media.css';
+// import './Content.css';
+// import './Content.media.css';
 import ContentAbout from "./ContentAbout";
 
 

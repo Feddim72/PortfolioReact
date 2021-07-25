@@ -10,8 +10,8 @@ import flexboxImg from '../../assets/instuments/flexbox_icon_s.png';
 import programImg from '../../assets/instuments/tool_program_ikona.png';
 import circle_01 from '../../assets/circle/koła_01.png';
 
-import './Tools.css';
-import './Tools.media.css';
+// import './Tools.css';
+// import './Tools.media.css';
 
 const ToolsState = {
     tools : [
