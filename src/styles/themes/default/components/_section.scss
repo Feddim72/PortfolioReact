@@ -726,7 +726,7 @@ div a:first-child:hover{
 
     .about__skills-name div,
     .about__skills-empty div {
-        margin-bottom: $space-medium;
+        margin-bottom: $space-medium32;
     }
 
     .about__skills-name {
@@ -971,6 +971,10 @@ div a:first-child:hover{
         width: 100%;
     }
 
+    .about__interests div:nth-child(2) {
+        justify-content: flex-start;
+    }
+
 
 }
 
@@ -997,15 +1001,6 @@ div a:first-child:hover{
 
 
 }
-
-// @media only screen and (max-width: 519px) {
-
-//     .content__conteiner 
-//     .content__avatar img:nth-child(1) {
-//         display: none;
-//     }
-    
-// }
 
 @media only screen and (max-width: 450px) {
     .about__skills-empty {
@@ -1098,36 +1093,6 @@ div a:first-child:hover{
 
 @media only screen and (max-width: 320px) {
 
-    // .content__conteiner {
-    //     margin-top: $space-xxl210;
-    // }
-
-    // .content__conteiner 
-    // .circle_01 {
-    //     left: 47%;
-    // }
-
-    // .content__conteiner .circle_02 {
-    //     top: 27%;
-    //     width: 63%;
-    //     left: 40%;
-    // }
-
-    // .info__name {
-    //     margin: $space-3P $space-3P 0;
-    // }
-
-    // .info__name p {
-    //     font-size: 15px;
-    // }
-
-    // .info__contact p {
-    //     font-size: 14px;
-    // }
-
-    // .info__but button {
-    //     width: 132px;
-    // }
 
     .about {
         margin-top: $space-30P;
