@@ -924,6 +924,17 @@ div a:first-child:hover{
 
 @media only screen and (max-width: 768px) {
 
+    .content__conteiner .circle_01 {
+        left: 60%;
+        top: 4.3%;
+        width: 41%;
+    }
+
+    .content__conteiner .circle_02 {
+        width: 35.5%;
+        top: 31%;
+    }
+
     .about {
         margin-top: $space-3P;
     }
@@ -949,6 +960,12 @@ div a:first-child:hover{
     .about__skills {
         width: 95%;
         
+    }
+
+    .about__skills img {
+        left: 35.5%;
+        top: 61.5%;
+        width: 66.5%;
     }
 
 }
@@ -1128,8 +1145,8 @@ div a:first-child:hover{
     }
 
     .about__skills img {
-        left: 38%;
-        top: 83.5%;
+        left: 35%;
+        top: 75.5%;
     }
     
 
@@ -1250,8 +1267,8 @@ div a:first-child:hover{
 
     .tools .circle_01 {
         left: 42%;
-        top: -10%;
-        width: 42%;
+        top: 0%;
+        width: 57%;
     }
 
 }
