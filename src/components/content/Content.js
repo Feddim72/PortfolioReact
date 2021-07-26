@@ -93,7 +93,7 @@ const Content = (props) => {
                 </div>
             </div>
 
-            <ContentAbout />
+            {/* <ContentAbout /> */}
 
             <br />
             <br />
