@@ -206,7 +206,7 @@ nav {
         display: block;
         box-shadow: none;
         width: 100%;
-        height: 140px;
+        height: 120px;
     }
 
     .label {
@@ -842,84 +842,52 @@ div a:first-child:hover{
 
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1024px) {
 
     .content {
-        margin: 0 $space-6P 0;
-    }
-
-    .content__conteiner {
-        margin-left: $space-2P;
-    }
-
-    .content__conteiner 
-    .circle_01 {
-        width: 43%;
-        left: 63.7%;
-    }
-
-    .content__conteiner 
-    .circle_02 {
-        top: 25.5%;
-        width: 32%;
-        left: 36%;
-    }
-
-    .content__avatar {
-        max-width: 390px;
-        height: 358px;
-    }
-    
-    .content__conteiner 
-    .content__avatar img:nth-child(1) {
-        right: 61%;
-        bottom: 21%;
-        width: 100%;
-    }
-
-    .content__avatar img:nth-child(2) {
-        max-width: 86%;
-    }
-
-    .content__avatar img {
-        border-radius: 4%;
+        margin: 0 $space-1P 0;
     }
 
     .info {
-        max-width: 522px;
-        margin-top: $space-4P;
-        margin-left: $space_-6P;
+        margin-top: 4%;
+        margin-left: 0;
+        width: 84%;
     }
 
-    .info__title {
-        height: 215px;
-        flex-direction: column;
-        min-width: 500px;
+    .content__avatar {
+        display: none;
     }
 
-    .info__name {
-        width: 96%;
+    .content__conteiner { 
+        flex-direction: column-reverse;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .content__conteiner .circle_02 {
+        width: 27.5%;
+        top: 41%;
+        left: 0.8%;
     }
 
-    .info__name h2 {
-        width: 99%;
+    .info .content__avatar {
+        display: flex;
+        left: auto;
+        top: auto;
+        margin: 0 auto;
+        margin-top: 2%;
     }
 
-    .info_link {
-        flex-direction: row;
-        justify-content: flex-end;
+    .content__conteiner 
+    .content__avatar img:nth-child(1) {
+        display: none;
     }
 
-    .info__contact, 
-    .info__contact h2 {
-        margin-top: $space-15P;
-    }
+}
 
-    .info__but button {
-        width: 139px;
-        height: 46px;
-        font-size: 16.4px;
-    }
+@media only screen and (max-width: 990px) {
+
 
     .about {
         display: flex;
@@ -954,112 +922,6 @@ div a:first-child:hover{
 }
 
 @media only screen and (max-width: 890px) {
-
-    .content__conteiner {
-        margin-left: 0;
-    }
-}
-
-@media only screen and (max-width: 870px) {
-    .info__title {
-        max-width: 440px;
-        min-width: 333px;
-        height: 255px;
-    }
-
-    .info_link {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 840px) {
-
-    .content {
-        margin: 0 $space-5P 0;
-    }
-
-    .content__conteiner {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: $space-xxl290;
-        margin-left: 0;
-    }
-
-    .content__conteiner 
-    .content__avatar img:nth-child(1) {
-        display: block;
-        right: -5%;
-        bottom: 86%;
-        width: 37%;
-    }
-
-    .content__conteiner 
-    .content__avatar {
-        display: none;
-    }
-
-    .content__avatar {
-        left: auto;
-        top: auto;
-    }
-
-    .content__conteiner .circle_01 {
-        left: 1.5%;
-        top: -5%;
-        width: 54%;
-    }
-
-    .content__conteiner .circle_02 {
-        top: 27%;
-        width: 37%;
-        left: 45%;
-    }
-
-    .info {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .info__title {
-        width: 60vh;
-        max-width: 500px;
-    }
-
-    .info .content__avatar {
-        flex-basis: 100%;
-        display: flex;
-        max-width: 100%;
-        justify-content: flex-end;
-    }
-
-    .content__avatar img:nth-child(2) {
-        margin-top: $space-15P;
-        max-width: 48%;
-        min-height: 105%;
-    }
-
-    .info__name {
-        width: 92%;
-        margin: $space-3P $space-4P 0;
-    }
-
-    .general-title {
-        font-size: 29px;
-    }
-
-    .info_link {
-        justify-content: center;
-    }
-
-    .info__contact, .info__contact h2 {
-        margin-top: $space-7P;
-        text-align: start;
-    }
     
     .about {
         margin-top: $space-3P;
@@ -1088,113 +950,76 @@ div a:first-child:hover{
     }
 }
 
-@media only screen and (max-width: 780px) {
-    .content__conteiner {
-        margin-top: $space-xxl265;
-    }
 
-    .content__conteiner 
-    .content__avatar img:nth-child(1) {
-        bottom: 93%;
-    }
-}
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 730px) {
-    .content__conteiner {
-        margin-top: $space-xxl245;
-    }
-
-    .content__conteiner .circle_01 {
-        left: -4.5%;
-        top: -3%;
-        width: 58%;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-
-    .content__avatar {
-        height: 323px;
-        
-    }
-
-    .content__avatar img:nth-child(2) {
-        min-width: 273px;
-    }
-
-    .about__me {
-        max-width: 95%;
-    }
-
-    .about__interests {
-        max-width: 100%;
-    }
-
-    .about__interests div:nth-child(2) {
-        justify-content: flex-start;
-    }
-}
-
-@media only screen and (max-width: 666px) {
-    .content__conteiner {
-        height: 526px;
-    }
-
-    .content__conteiner {
-        margin-top: $space-xxl265;
-    }
-}
-
-@media only screen and (max-width: 570px) {
-    .content__conteiner {
-        margin-top: $space-xxl230;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-
-    .content__conteiner {
-        margin-top: $space-xxl245;
+    .info_link {
+        justify-content: flex-end;
+        align-items: center;
     }
 
     .info__title {
-        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .info__name {
+        width: 97%;
     }
 
     .info__name h2 {
         width: 100%;
     }
 
-    .content__avatar img:nth-child(2) {
-        min-height: 107%;
-        margin-top: $space-4P;
-    }
-
-    .about__skills-empty {
-        margin-top:$space-10P;
-    }
 
 }
 
-@media only screen and (max-width: 536px) {
-    .general-title {
-        font-size: 27px;
+@media only screen and (max-width: 530px) {
+
+    .info {
+        margin-top: 8%;
     }
+
+    .info .content__avatar {
+        max-width: 90%;
+        height: 440px;
+    }
+
+
 }
 
-@media only screen and (max-width: 519px) {
-
-    .content__conteiner 
-    .content__avatar img:nth-child(1) {
-        display: none;
-    }
+@media only screen and (max-width: 470px) {
     
+    .info .content__avatar {
+        
+        height: 400px;
+    }
+
+
 }
+
+// @media only screen and (max-width: 519px) {
+
+//     .content__conteiner 
+//     .content__avatar img:nth-child(1) {
+//         display: none;
+//     }
+    
+// }
 
 @media only screen and (max-width: 450px) {
     .about__skills-empty {
         margin-top: $space-15P;
     }
+
+    .info .content__avatar {
+        height: auto;
+    }
+
+    .info__but {
+        display: flex;
+    }
+
 }
 
 @media only screen and (max-width: 437px) {
@@ -1205,19 +1030,8 @@ div a:first-child:hover{
 
 @media only screen and (max-width: 421px) {
 
-    .info__title {
-        width: 96%;
-    }
-
-    .info__contact, 
-    .info__contact h2 {
-        margin-top: $space-8P;
-    }
-
-    .info__but button {
-        width: 140px;
-        height: 45px;
-        font-size: 16.4px;
+    .info__name p {
+        display: none;
     }
 
     .about {
@@ -1241,22 +1055,14 @@ div a:first-child:hover{
 
 }
 
-@media only screen and (max-width: 388px) {
-    .info__title {
-        width: 100%;
-        max-height: 500px;
-        height: 80%;
-    }
-
-    .content__conteiner {
-        margin-top: $space-83P;
-    }
-}
-
 @media only screen and (max-width: 364px) {
-    
+
     .info__title {
-        min-width: 250px;
+        padding: 0 3% 0;
+    }
+
+    .general-title {
+        font-size: 25px;
     }
 
     .about__skills {
@@ -1290,58 +1096,38 @@ div a:first-child:hover{
     }
 }
 
-@media only screen and (max-width: 345px) {
-
-    .content__conteiner {
-        margin-top: $space-86P;
-    }
-    
-}
-
-@media only screen and (max-width: 329px) {
-
-    .content__conteiner {
-        margin-top: $space-90P;
-    }
-
-    .info__but button {
-        width: 130px;
-    }
-    
-}
-
 @media only screen and (max-width: 320px) {
 
-    .content__conteiner {
-        margin-top: $space-xxl210;
-    }
+    // .content__conteiner {
+    //     margin-top: $space-xxl210;
+    // }
 
-    .content__conteiner 
-    .circle_01 {
-        left: 47%;
-    }
+    // .content__conteiner 
+    // .circle_01 {
+    //     left: 47%;
+    // }
 
-    .content__conteiner .circle_02 {
-        top: 27%;
-        width: 63%;
-        left: 40%;
-    }
+    // .content__conteiner .circle_02 {
+    //     top: 27%;
+    //     width: 63%;
+    //     left: 40%;
+    // }
 
-    .info__name {
-        margin: $space-3P $space-3P 0;
-    }
+    // .info__name {
+    //     margin: $space-3P $space-3P 0;
+    // }
 
-    .info__name p {
-        font-size: 15px;
-    }
+    // .info__name p {
+    //     font-size: 15px;
+    // }
 
-    .info__contact p {
-        font-size: 14px;
-    }
+    // .info__contact p {
+    //     font-size: 14px;
+    // }
 
-    .info__but button {
-        width: 132px;
-    }
+    // .info__but button {
+    //     width: 132px;
+    // }
 
     .about {
         margin-top: $space-30P;
@@ -1792,7 +1578,7 @@ div a:first-child:hover{
 
     .my-works__portfolio .portfolio-block > div 
     div:nth-child(1) {
-        padding: $space-5P $space-15P 0;
+        padding: $space-5P $space-2P 0;
     }
 }
 
@@ -1971,7 +1757,7 @@ div a:first-child:hover{
     .blog_posts {
         max-width: 900px;
         margin-left: $space-10P;
-        padding-right: $space-15P;
+        margin-right: 2%;
     }
 
     .blog_posts .title img {
@@ -2010,25 +1796,19 @@ div a:first-child:hover{
 
 @media only screen and (max-width: 570px) {
 
-    .content__avatar img:nth-child(2) {
-        min-height: 95%;
-    }
-
-    .info {
-        bottom: -4%;
-    }
-
     .title {
         flex-direction: column;
     }
 
     .blog_posts {
-        margin-left: $space-3P;
+        margin: 0;
+        padding: 0 2% 0;
     }
 
     .blog_posts .title img {
         margin-bottom: $space-5P;
         margin-right: 0;
+        width: 300px;
     }
 
 }
@@ -2205,6 +1985,7 @@ form button:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+
     .contact {
         min-height: 330px;
         padding-top: $space-8P;
@@ -2283,7 +2064,7 @@ form button:hover {
 
     .contact .contact__autor {
         position: relative;
-        margin: 0 0 0 $space-30P;
+        margin: $space-2P 0 0 $space-30P;
     }
 }
 
@@ -2301,7 +2082,7 @@ form button:hover {
 
     .contact .contact__autor {
         align-items: center;
-        margin: $space-4P $space-15P 0;
+        margin: $space-4P $space-4P 0;
     }
 
     .contact__name > div div:nth-child(1) {
@@ -2352,6 +2133,11 @@ form button:hover {
         margin-left: 0;
         margin-top: $space-5P;
     }
+
+    .contact__name div:first-of-type {
+        height: 340px;
+    }
+
 }
 
 
