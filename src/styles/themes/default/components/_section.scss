@@ -1,7 +1,7 @@
 
 body {
     max-width: 1920px;
-    width: 100%;
+    width: $standart-100P;
     margin: 0 auto;
 
     font-family: 'Montserrat', sans-serif;
@@ -18,7 +18,14 @@ button {
     text-align: center;
     background: $c-MandysPink;
     transition: .15s;
+<<<<<<< HEAD
     border-radius: $space-xxl-small
+=======
+    border-radius: $space-xxl-small;
+    width: $button-width;
+    height: $button-height;
+    box-shadow: $box-shadow;
+>>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 }
 
 button:hover {
@@ -52,7 +59,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     box-shadow:2px 0 16px 2px $c-SilverChalice;
-    width: 100%;
+    width: $standart-100P;
     height: 140px;
     background-color: $c-Alto;
 }
@@ -64,7 +71,7 @@ nav {
 
 .label h1 {
     color: $c-Silver;
-    font-size: 100px;
+    font-size: $standart-100;
     font-weight: normal;
     font-family: 'Monoton', cursive;
     margin: 0;
@@ -103,9 +110,9 @@ nav {
 .nav > div > a:after {
     content: '';
     display: block;
-    width: 100%;
+    width: $standart-100P;
     height: 3px;
-    border-radius: 100px;
+    border-radius: $standart-100;
 
     background-color: $c-HummingBird;
     opacity: 0;
@@ -128,7 +135,7 @@ nav {
 
 .nav__img img {
     display: flex;
-    width: 100%;
+    width: $standart-100P;
     margin-top: $space-xxx-small;
     width: $space-x-large;
     transition: .3s;
@@ -212,13 +219,13 @@ nav {
 
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: $break-tablet) {
 
     nav {
         display: block;
         box-shadow: none;
-        width: 100%;
-        height: 120px;
+        width: $standart-100P;
+        height: $standart-120;
     }
 
     .label {
@@ -226,7 +233,7 @@ nav {
     }
 
     .nav {
-        width: 100%;
+        width: $standart-100P;
         flex-wrap: wrap-reverse;
         box-shadow: 0 6px 9px -2px $c-DustyGrayOpaciti_85;
     }
@@ -257,7 +264,7 @@ nav {
 
 }
 
-@media only screen and (max-width: $break-xs) {
+@media only screen and (max-width: $break-530) {
 
     .nav {
         height: 85px;
@@ -291,7 +298,7 @@ nav {
 @media only screen and (max-width: 400px) {
 
     nav {
-        height: 120px;
+        height: $standart-120;
     }
 
     .label {
@@ -344,7 +351,7 @@ nav {
 
 .content__conteiner
 .circle_01 img {
-    width: 100%;
+    width: $standart-100P;
     position: absolute;
 }
 
@@ -358,7 +365,7 @@ nav {
 
 .content__conteiner
 .circle_02 img {
-    width: 100%;
+    width: $standart-100P;
 }
 
 .content__avatar {
@@ -377,8 +384,8 @@ img:nth-child(1) {
 }
 
 .content__avatar img:nth-child(2) {
-    max-width: 100%;
-    min-height: 100%;
+    max-width: $standart-100P;
+    min-height: $standart-100P;
 }
 
 .content__avatar img {
@@ -459,7 +466,7 @@ img:nth-child(1) {
 }
 
 .info_link > 
-div a:first-child:hover{
+div a:first-child:hover {
     font-weight: bold;
     transition-timing-function: linear;
     transition-duration: 0.2s;
@@ -488,6 +495,7 @@ div a:first-child:hover{
     margin-bottom: $space-medium;
 }
 
+<<<<<<< HEAD
 .info__but button {
     width: 197px;
     height: 67px;
@@ -500,15 +508,20 @@ div a:first-child:hover{
     // transition: .15s;
 }
 
+=======
+>>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 .info__but :first-child {
     margin-right: $space-4P;
 }
 
+<<<<<<< HEAD
 // .info__but button:hover {
 //     background:$c-Pancho;
 //     transition: .15s;
 // }
 
+=======
+>>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 .about {
     margin-top: $space-4P;
     display: flex;
@@ -539,8 +552,8 @@ div a:first-child:hover{
 }
 
 .about__interests img {
-    max-width: 100%;
-    min-height: 100%;
+    max-width: $standart-100P;
+    min-height: $standart-100P;
     transition: 0.3s;
 }
 
@@ -558,13 +571,13 @@ div a:first-child:hover{
 
 .about__interests div:nth-child(2) div {
     width: 270px;
-    height: 100px;
+    height: $standart-100;
 }
 
 .about__interests div:nth-child(2) p {
     text-align: right;
     font-weight: 900;
-    width: 100%;
+    width: $standart-100P;
 }
 
 .about__interests ul {
@@ -616,7 +629,7 @@ div a:first-child:hover{
     margin-bottom: $space-standart;
     height: 47px;
     border-radius: 8px;
-    width: 100%;
+    width: $standart-100P;
 }
 
 .about__skills-name {
@@ -807,7 +820,7 @@ div a:first-child:hover{
     }
 
     .info__but button {
-        width: 171px;
+        width: 170px;
         height: 52px;
     }
 
@@ -888,7 +901,7 @@ div a:first-child:hover{
         left: auto;
         top: auto;
         margin: 0 auto;
-        margin-top: 2%;
+        margin-top: $space-2P;
     }
 
     .content__conteiner 
@@ -966,7 +979,7 @@ div a:first-child:hover{
     }
 
     .info__name h2 {
-        width: 100%;
+        width: $standart-100P;
     }
 
     .about__skills {
@@ -982,7 +995,7 @@ div a:first-child:hover{
 
 }
 
-@media only screen and (max-width: $break-xs) {
+@media only screen and (max-width: $break-530) {
 
     .info {
         margin-top: 8%;
@@ -1079,7 +1092,7 @@ div a:first-child:hover{
     }
 
     .about__skills-name .php {
-        min-width: 100px;
+        min-width: $standart-100;
     }
 
     .about__skills-name .nodejs {
@@ -1200,8 +1213,8 @@ div a:first-child:hover{
     background-color: $c-white;
     font-size: 13px;
     text-align: center;
-    width: 120px;
-    height: 120px;
+    width: $standart-120;
+    height: $standart-120;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -1326,7 +1339,7 @@ div a:first-child:hover{
 
 .my-works {
     position: relative;
-    padding-left: 11%;
+    padding-left: $space-11P;
 }
 
 .my-works h2, .my-works h3 {
@@ -1352,7 +1365,7 @@ div a:first-child:hover{
 
 .my-works .circle_01 img {
     position: absolute;
-    width: 100%;
+    width: $standart-100P;
 }
 
 .my-works__portfolio {
@@ -1378,8 +1391,8 @@ div a:first-child:hover{
     display: none;
     background-color: $c-MandysPinkOpacity70;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: $standart-100P;
+    height: $standart-100P;
     color: $c-white;
     font-size: 26.3px;
     font-family: 'Raleway Medium';
@@ -1415,10 +1428,10 @@ div a:first-child:hover{
     align-items: end;
     flex-direction: row;
     justify-content: flex-end;
-    width: 100%;
+    width: $standart-100P;
 }
 
-.portfolio-block:hover .portfolio-effect{
+.portfolio-block:hover .portfolio-effect {
     display: flex;
 }
 
@@ -1470,7 +1483,8 @@ div a:first-child:hover{
 
 @media only screen and (max-width: 1154px) {
 
-        .my-works__portfolio .portfolio-block {
+        .my-works__portfolio 
+        .portfolio-block {
             width: 400px;
         }
 }
@@ -1493,7 +1507,7 @@ div a:first-child:hover{
     }
 
     .portfolio-block {
-        margin: 15px;
+        margin: $space-xl-small;
     }
 
 }
@@ -1520,6 +1534,7 @@ div a:first-child:hover{
     }
 
     .portfolio-button button {
+<<<<<<< HEAD
         // border: none;
         // text-align: center;
         // background: $c-MandysPink;
@@ -1539,17 +1554,22 @@ div a:first-child:hover{
     //     background:$c-Pancho;
     //     transition: .15s;
     // }
+=======
+        height: 40px;
+        margin-bottom: $space-4P;
+    }
+>>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $break-500) {
 
     .my-works .circle_01 {
         top: 19%;
-        left: $space-5P;
+        left: 5%;
     }
 
     .my-works__portfolio {
-        padding: 0 2%;
+        padding: 0 $space-2P;
     }
 
     .my-works__portfolio .portfolio-block {
@@ -1627,10 +1647,14 @@ div a:first-child:hover{
     
 }
 
-
 .title a {
-    text-decoration: none;
     color: $c-Calico;
+}
+
+.title a:hover {
+    transform: scale(1.2, 1.2);
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
 }
 
 
@@ -1644,7 +1668,7 @@ div a:first-child:hover{
 @media only screen and (max-width: $break-laptop) {
     .blog_posts {
         max-width: 1200px;
-        padding-right: 2%;
+        padding-right: $space-2P;
     }
 
     .blog_posts .title img {
@@ -1657,7 +1681,7 @@ div a:first-child:hover{
     .blog_posts {
         max-width: 900px;
         margin-left: $space-10P;
-        margin-right: 2%;
+        margin-right: $space-2P;
     }
 
     .blog_posts .title img {
@@ -1702,7 +1726,7 @@ div a:first-child:hover{
 
     .blog_posts {
         margin: 0;
-        padding: 0 2% 0;
+        padding: 0 $space-2P 0;
     }
 
     .blog_posts .title img {
@@ -1743,7 +1767,7 @@ div a:first-child:hover{
 
 .contact__circle_03 {
     position: absolute;
-    top: 57.5%;
+    top: 55.5%;
     left: 27%;
     width: 31%;
 }
@@ -1753,6 +1777,7 @@ form {
     display: flex;
 }
 
+<<<<<<< HEAD
 form button {
     // border: none;
     // text-align: center;
@@ -1773,6 +1798,8 @@ form button {
 //     transition: .15s;
 // }
 
+=======
+>>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 .contact form div:nth-child(1) {
     display: flex;
     flex-wrap: wrap;
@@ -1787,7 +1814,7 @@ form button {
 }
 
 .contact input,textarea {
-    width: 100%;
+    width: $standart-100P;
     height: $space-x-large;
     margin-bottom: $space-standart;
     outline: none;
@@ -1832,8 +1859,8 @@ form button {
 .contact__name img {
     max-width: 370px;
     border-radius: $space-xxl-small;
-    width: 100%;
-    height: 100%;
+    width: $standart-100P;
+    height: $standart-100P;
 }
 
 .contact__mail {
@@ -1852,7 +1879,7 @@ form button {
 }
 
 .contact__mail img {
-    width: 100%;
+    width: $standart-100P;
 }
 
 .contact__mail div:nth-child(1) {
@@ -1902,7 +1929,10 @@ form button {
     form button {
         width: 130px;
         height: 51px;
+<<<<<<< HEAD
         // background-size: 460%;
+=======
+>>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
     }
 
     .contact__mail {
@@ -1927,9 +1957,7 @@ form button {
 
     .contact .contact__autor {
         position: relative;
-        margin-top: $space-6P;
-        margin-right: 0;
-        margin-left: $space-30P;
+        margin: $space-6P 0 0 $space-30P;
     }
 
     .contact__autor 
@@ -1995,7 +2023,7 @@ form button {
         right: 0;
         bottom: 0;
         max-width: 370px;
-        width: 100%;
+        width: $standart-100P;
         margin-top: $space-standart;
         margin-bottom: $space-standart;
     }
@@ -2030,7 +2058,7 @@ form button {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $break-500) {
     .contact__autor {
         margin-top: $space-4P;
     }
