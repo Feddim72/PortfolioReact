@@ -146,7 +146,7 @@ nav {
 // NavMedia --------------------------------------
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: $break-laptop) {
 
     .nav {
         width: 65%;
@@ -189,7 +189,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $break800) {
 
     .nav {
         width: 83%;
@@ -204,7 +204,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $break-tablet) {
 
     hr {
         height: 46px;
@@ -257,7 +257,7 @@ nav {
 
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: $break-xs) {
 
     .nav {
         height: 85px;
@@ -276,7 +276,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: $break-450) {
 
     .nav {
         height: 85px;
@@ -337,9 +337,9 @@ nav {
 .content__conteiner 
 .circle_01 {
     position: absolute;
-    left: 73%;
+    left: 72%;
     top: 13.3%;
-    width: 27%;
+    width: 28%;
 }
 
 .content__conteiner
@@ -352,7 +352,7 @@ nav {
 .circle_02 {
     position: absolute;
     width: 23%;
-    top: 32%;
+    top: 28%;
     left: 27.6%;
 }
 
@@ -699,7 +699,7 @@ div a:first-child:hover{
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: $break-laptop) {
 
     .content__conteiner {
         margin-top: 0;
@@ -854,7 +854,7 @@ div a:first-child:hover{
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $break-laptop-1024) {
 
     .content {
         margin: 0 $space-2P 0;
@@ -934,7 +934,7 @@ div a:first-child:hover{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $break-tablet) {
 
     .content__conteiner .circle_01 {
         left: 60%;
@@ -982,7 +982,7 @@ div a:first-child:hover{
 
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: $break-xs) {
 
     .info {
         margin-top: 8%;
@@ -1006,7 +1006,7 @@ div a:first-child:hover{
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: $break-450) {
     .about__skills-empty {
         margin-top: $space-15P;
     }
@@ -1057,7 +1057,7 @@ div a:first-child:hover{
 @media only screen and (max-width: 364px) {
 
     .info__title {
-        padding: 0 3% 0;
+        padding: 0 $space-3P 0;
     }
 
     .general-title {
@@ -1095,7 +1095,7 @@ div a:first-child:hover{
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: $break-320) {
 
 
     .about {
@@ -1229,7 +1229,7 @@ div a:first-child:hover{
 @media only screen and (max-width: 1220px) {
 
     .tools {
-        min-height: 450px;
+        min-height: $break-450;
     }
 
     .tools__block {
@@ -1243,7 +1243,7 @@ div a:first-child:hover{
     }
 }
 
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: $break-mid) {
 
     .tools__block {
         width: 80%;
@@ -1255,7 +1255,7 @@ div a:first-child:hover{
     
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $break800) {
 
     .tools__block {
         width: 90%;
@@ -1267,7 +1267,7 @@ div a:first-child:hover{
     
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $break-tablet) {
 
     .tools__block {
         width: 78%;
@@ -1293,7 +1293,7 @@ div a:first-child:hover{
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: $break-425) {
 
     .tools .circle_01 {
         top: 4%;
@@ -1326,16 +1326,17 @@ div a:first-child:hover{
 
 .my-works {
     position: relative;
+    padding-left: 11%;
 }
 
 .my-works h2, .my-works h3 {
     margin: 0;
 }
 
-.my-works > div {
-    margin-left: $space-12P;
+// .my-works > div {
+//     margin-left: $space-12P;
     
-}
+// }
 
 .my-works > div:first-of-type {
     max-width: 720px;
@@ -1343,9 +1344,15 @@ div a:first-child:hover{
 
 .my-works .circle_01 {
     position: absolute;
-    top: 26%;
-    left: 59%;
+    top: 34%;
+    left: 60%;
     margin-left: 0;
+    width: 35%;
+}
+
+.my-works .circle_01 img {
+    position: absolute;
+    width: 100%;
 }
 
 .my-works__portfolio {
@@ -1461,132 +1468,40 @@ div a:first-child:hover{
 // MyWorksMedia ----------------------------------
 
 
-@media only screen and (max-width: 1440px) {
-    .my-works > div {
-        margin-left: $space-15P;
-    }
+@media only screen and (max-width: 1154px) {
 
-    .my-works .circle_01 {
-        top: 26%;
-        left: 46%;
-    }
-
-    .my-works .circle_01 img {
-        width: 100%;
-    }
+        .my-works__portfolio .portfolio-block {
+            width: 400px;
+        }
 }
 
-@media only screen and (max-width: 1400px) {
-
-    .my-works > div {
-        margin-left: $space-12P;
-    }
-}
-
-@media only screen and (max-width: 1270px) {
-
-    .my-works__portfolio .portfolio-block {
-        width: 430px;
-    }
-
-}
-
-@media only screen and (max-width: 1246px) {
-
-    .my-works__portfolio .portfolio-block {
-        width: 400px;
-    }
-
-
-}
-
-@media only screen and (max-width: 1040px) {
-
-    .my-works > div {
-        margin-left: $space-10P;
-    }
-
-}
-
-@media only screen and (max-width: 1024px) {
-
-    .my-works > div {
-        margin-left: $space-6P;
-    }
-
-}
-
-@media only screen and (max-width: 931px) {
-    .my-works__portfolio {
-        justify-content: center;
-    }
-    
-}
-
-@media only screen and (max-width: 915px) {
-
-    .my-works > div {
-        margin-left: $space-8P;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    
-    .my-works > div {
-        margin-left: $space-6P;
-    }
-
-    .my-works > div:first-of-type {
-        max-width: 620px;
-    }
-
-    .my-works__portfolio a img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .my-works__portfolio .portfolio-block > div 
-    div:nth-child(1) {
-        padding: $space-5P $space-2P 0;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-
-    .my-works .my-works__portfolio {
-        margin-left: 0;
-    }
-
-    .my-works__portfolio {
-        justify-content: center;
-    }
-
-    .my-works .my-works__portfolio .portfolio-block {
-        margin: 0 $space-x-small $space-medium;
-    }
-
-    .my-works__portfolio .portfolio-block {
-        width: 416px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $break-laptop-1024) {
 
     .my-works {
-        padding-left: $space-1_5P;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3%;
     }
 
     .my-works > div:first-of-type {
-        max-width: 320px;
+        max-width: 828px;
     }
 
-    .my-works .circle_01 {
-        top: 19%;
-        left: $space-5P;
+    .my-works__portfolio {
+        justify-content: center;
     }
 
-    .my-works__portfolio .portfolio-block {
-        margin-bottom: $space-medium;
+    .portfolio-block {
+        margin: 15px;
+    }
+
+}
+
+@media only screen and (max-width: $break-mid) {
+
+    .my-works__portfolio {
+        flex-direction: column;
     }
 
     .my-works__portfolio .portfolio-block:nth-child(3),
@@ -1595,8 +1510,13 @@ div a:first-child:hover{
         display: none;
     }
 
+    .my-works__portfolio .portfolio-block {
+        width: 460px;
+    }
+
     .portfolio-button {
         display: flex;
+        justify-content: center;
     }
 
     .portfolio-button button {
@@ -1621,11 +1541,21 @@ div a:first-child:hover{
     // }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
 
-    .my-works {
-        padding-left: 0;
+    .my-works .circle_01 {
+        top: 19%;
+        left: $space-5P;
     }
+
+    .my-works__portfolio {
+        padding: 0 2%;
+    }
+
+    .my-works__portfolio .portfolio-block {
+        width: auto;
+    }
+
 }
 
 
@@ -1656,14 +1586,14 @@ div a:first-child:hover{
 .blog_posts_circle_01 {
     width: 32%;
     position: absolute;
-    top: 32%;
+    top: 26%;
     left: -22%;
 }
 
 .blog_posts_circle_03 {
     width: 38%;
     position: absolute;
-    top: 77%;
+    top: 71%;
     right: 12%;
 }
 
@@ -1711,9 +1641,10 @@ div a:first-child:hover{
 // BlogPostMedia ---------------------------------
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: $break-laptop) {
     .blog_posts {
         max-width: 1200px;
+        padding-right: 2%;
     }
 
     .blog_posts .title img {
@@ -1721,7 +1652,7 @@ div a:first-child:hover{
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $break-laptop-1024) {
 
     .blog_posts {
         max-width: 900px;
@@ -1747,7 +1678,7 @@ div a:first-child:hover{
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $break800) {
 
     .blog_posts {
         margin-left: $space-6P;
@@ -1936,7 +1867,7 @@ form button {
 // ContaktMedia ----------------------------------
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: $break-laptop) {
 
     .contact > div {
         margin-left: $space-5P;
@@ -1953,7 +1884,7 @@ form button {
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: $break-laptop-1024) {
 
     .contact {
         min-height: 330px;
@@ -2024,7 +1955,7 @@ form button {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $break-tablet) {
 
     .contact > div {
         margin-left: 0;
@@ -2105,7 +2036,7 @@ form button {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: $break-425) {
     .contact > div div:nth-child(1) {
         max-width: 44vh;
     }
