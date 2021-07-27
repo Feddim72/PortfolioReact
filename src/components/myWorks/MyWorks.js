@@ -8,7 +8,7 @@ import portfolio_case_05 from '../../assets/portfolio/portfolio_case_05.png';
 import portfolio_case_06 from '../../assets/portfolio/portfolio_case_06.png';
 import bit_bucket_icon from '../../assets/ico/bit_bucket_icon.png';
 import external_link_icon from '../../assets/ico/external_link_icon.png';
-import circle_01 from '../../assets/circle/koła_01.png';
+import circle_1 from '../../assets/circle/koła_1.png';
 
 // import './MyWorks.css';
 // import './MyWorks.media.css';
@@ -59,7 +59,7 @@ const MyWorks = (props) => {
             <br />
 
             <div className="circle_01">
-                <img src={circle_01} alt="circle_01" />
+                <img src={circle_1} alt="circle_1" />
             </div>
 
             <div className="my-works__portfolio">
