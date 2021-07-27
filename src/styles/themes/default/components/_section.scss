@@ -915,9 +915,9 @@ div a:first-child:hover{
     }
 
     .about__skills img {
-        left: 40.3%;
-        top: 74.5%;
-        width: 66.5%;
+        left: 49%;
+        top: 63.5%;
+        width: 52.5%;
     }
 }
 
@@ -1973,7 +1973,7 @@ form button:hover {
 
     .contact {
         flex-wrap: wrap;
-        padding-top: $space-standart;
+        padding: $space-standart $space-5P 0 0;
         max-height: 1400px;
     }
 
@@ -2015,8 +2015,28 @@ form button:hover {
 @media only screen and (max-width: 768px) {
 
     .contact > div {
-        margin-left: $space-7P;
+        margin-left: 0;
         width: 90%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .contact form div:nth-child(1),
+    .contact > div div:nth-child(1) {
+        max-width: 108vh;
+    }
+
+    .contact form div:nth-child(2) {
+        margin-left: 0;
+        margin-top: $space-2P;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form button {
+        width: $space-30P;
     }
 
     .contact .contact__autor {
