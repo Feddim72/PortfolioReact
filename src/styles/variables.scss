@@ -35,6 +35,7 @@ $space-7P: 7%;
 $space_-7P: -7%;
 $space-8P: 8%;
 $space-10P: 10%;
+$space-11P: 11%;
 $space-12P: 12%;
 $space_-12P: -12%;
 $space-15P: 15%;
@@ -74,9 +75,22 @@ $break800: 800px;
 $break-mid: 915px;
 $break-laptop-1024: 1024px;
 $break-laptop: 1440px;
-$break-high: 480px;
 
 
+/*  =grid
+**************************************** */
+$standart-100: 100px;
+$standart-120: 120px;
+$standart-100P: 100%;
+
+
+
+/*  =Button
+**************************************** */
+
+$button-width: 200px;
+$button-height: 68px;
+$box-shadow: 4px 4px 7px -1px $c-DustyGrayOpaciti_66;
 
 
 
