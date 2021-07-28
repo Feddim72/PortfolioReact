@@ -17,15 +17,7 @@ button {
     cursor: pointer;
     text-align: center;
     background: $c-MandysPink;
-    transition: .15s;
-<<<<<<< HEAD
     border-radius: $space-xxl-small
-=======
-    border-radius: $space-xxl-small;
-    width: $button-width;
-    height: $button-height;
-    box-shadow: $box-shadow;
->>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 }
 
 button:hover {
@@ -495,33 +487,16 @@ div a:first-child:hover {
     margin-bottom: $space-medium;
 }
 
-<<<<<<< HEAD
 .info__but button {
     width: 197px;
     height: 67px;
-    // border: none;
-    // cursor: pointer;
-    // text-align: center;
-    // background: $c-MandysPink;
-    // border-radius: $space-xxl-small;
     box-shadow: 4px 4px 7px -1px $c-DustyGrayOpaciti_66;
-    // transition: .15s;
 }
 
-=======
->>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 .info__but :first-child {
     margin-right: $space-4P;
 }
 
-<<<<<<< HEAD
-// .info__but button:hover {
-//     background:$c-Pancho;
-//     transition: .15s;
-// }
-
-=======
->>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 .about {
     margin-top: $space-4P;
     display: flex;
@@ -1534,31 +1509,9 @@ div a:first-child:hover {
     }
 
     .portfolio-button button {
-<<<<<<< HEAD
-        // border: none;
-        // text-align: center;
-        // background: $c-MandysPink;
-        // background-repeat: no-repeat;
-        // background-position: 50%;
-        // background-size: 330%;
-        width: 202px;
-        height: 40px;
-        box-shadow: 3px 3px 9px -2px $c-Gray;
-        // border-radius: $space-xxl-small;
-        // transition: .15s;
-        // cursor: pointer;
-        margin-bottom: $space-4P;
-    }
-
-    // .portfolio-button button:hover {
-    //     background:$c-Pancho;
-    //     transition: .15s;
-    // }
-=======
         height: 40px;
         margin-bottom: $space-4P;
     }
->>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 }
 
 @media only screen and (max-width: $break-500) {
@@ -1777,29 +1730,6 @@ form {
     display: flex;
 }
 
-<<<<<<< HEAD
-form button {
-    // border: none;
-    // text-align: center;
-    // background: $c-MandysPink;
-    // background-repeat: no-repeat;
-    // background-position: 50% ;
-    // background-size: 330%;
-    width: 202px;
-    height: $space-x-large;
-    box-shadow: 3px 3px 9px -2px $c-Gray;
-    // border-radius: $space-xxl-small;
-    // transition: .15s;
-    // cursor: pointer;
-}
-
-// form button:hover {
-//     background:$c-Pancho;
-//     transition: .15s;
-// }
-
-=======
->>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
 .contact form div:nth-child(1) {
     display: flex;
     flex-wrap: wrap;
@@ -1929,10 +1859,6 @@ form button {
     form button {
         width: 130px;
         height: 51px;
-<<<<<<< HEAD
-        // background-size: 460%;
-=======
->>>>>>> 1756ca5832a406df7a0b58abdb271af0434b15e6
     }
 
     .contact__mail {
