@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
 
     font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+    font-size: pxToRem(21);
     color: $c-Coffee;
 }
 

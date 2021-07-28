@@ -1,7 +1,7 @@
 button {
     font-family: 'Montserrat', sans-serif;
     color: $c-white;
-    font-size: 22.4px ;
+    font-size: pxToRem(22.4) ;
     border: none;
     cursor: pointer;
     text-align: center;

@@ -96,7 +96,7 @@ img:nth-child(1) {
 .general-title {
     font-family: 'Raleway Medium';
     font-weight: normal;
-    font-size: 38px;
+    font-size: pxToRem(38);
 }
 
 .general-title--black {
@@ -331,7 +331,7 @@ div a:first-child:hover {
 
 .about__skills-name span {
     margin-right: $space-x-small;
-    font-size: 20.17px; 
+    font-size: pxToRem(20.17); 
     color: $c-white;
 }
 
@@ -375,7 +375,7 @@ div a:first-child:hover {
     }
 
     .general-title {
-        font-size: 31px;
+        font-size: pxToRem(31);
     }
 
     .content__avatar {
@@ -411,7 +411,7 @@ div a:first-child:hover {
 @media only screen and (max-width: 1224px) {
 
     body {
-        font-size: 18px;
+        font-size: pxToRem(18);
     }
 
     .content__conteiner {
@@ -472,7 +472,7 @@ div a:first-child:hover {
     }
 
     button {
-        font-size: 18.4px;
+        font-size: pxToRem(18.4);
     }
 
     .about__me {
@@ -721,7 +721,7 @@ div a:first-child:hover {
     }
 
     .general-title {
-        font-size: 25px;
+        font-size: pxToRem(25);
     }
 
     .about__skills {
@@ -751,7 +751,7 @@ div a:first-child:hover {
     }
 
     .about__skills-name span {
-        font-size: 18px;
+        font-size: pxToRem(18);
     }
 }
 
@@ -783,7 +783,7 @@ div a:first-child:hover {
 
     .about__skills p {
         width: 95%;
-        font-size: 15px;
+        font-size: pxToRem(15);
     }
 
     .about__skills-empty, 
@@ -813,7 +813,7 @@ div a:first-child:hover {
     }
 
     .about__skills-name span {
-        font-size: 15.17px;
+        font-size: pxToRem(15.17);
     }
 
     .about__skills img {

@@ -10,11 +10,6 @@
     margin: 0;
 }
 
-// .my-works > div {
-//     margin-left: $space-12P;
-    
-// }
-
 .my-works > div:first-of-type {
     max-width: 720px;
 }
@@ -58,7 +53,7 @@
     width: $standart-100P;
     height: $standart-100P;
     color: $c-white;
-    font-size: 26.3px;
+    font-size: pxToRem(26.3);
     font-family: 'Raleway Medium';
     flex-direction: column;
     align-items: center;
@@ -66,7 +61,7 @@
 }
 
 .portfolio-effect h2 {
-    font-size: 38.5px;
+    font-size: pxToRem(38.5);
 }
 
 .portfolio-effect__title {

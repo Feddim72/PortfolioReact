@@ -28,7 +28,7 @@
 
 .tools__block > div {
     background-color: $c-white;
-    font-size: 13px;
+    font-size: pxToRem(13);
     text-align: center;
     width: $standart-120;
     height: $standart-120;

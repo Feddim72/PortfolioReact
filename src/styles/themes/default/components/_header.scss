@@ -24,7 +24,7 @@ nav {
 
 .label h1 {
     color: $c-Silver;
-    font-size: 100px;
+    font-size: pxToRem(100);
     font-weight: normal;
     font-family: 'Monoton', cursive;
     margin: 0;
@@ -54,7 +54,7 @@ nav {
 .nav > div > a {
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+    font-size: pxToRem(21);
     color: white;
     transition: opacity .3s linear;
     cursor: pointer;
@@ -114,11 +114,11 @@ nav {
     }
 
     .label h1 {
-        font-size: 75px;
+        font-size: pxToRem(75);
     }
 
     .nav > div > a {
-        font-size: 20px;
+        font-size: pxToRem(20);
     }
 
     hr {
@@ -137,7 +137,7 @@ nav {
 @media only screen and (max-width: 1000px) {
 
     .label h1 {
-        font-size: 65px;
+        font-size: pxToRem(65);
     }
 
     .nav {
@@ -145,7 +145,7 @@ nav {
     }
 
     .nav > div > a {
-        font-size: 18px;
+        font-size: pxToRem(18);
     }
 }
 
@@ -160,7 +160,7 @@ nav {
     }
 
     .label h1 {
-        font-size: 52px;
+        font-size: pxToRem(52);
     }
 }
 
@@ -192,7 +192,7 @@ nav {
     }
 
     .nav > div > a {
-        font-size: 22px;
+        font-size: pxToRem(22);
     }
 
     #nav__img {
@@ -212,7 +212,7 @@ nav {
 @media only screen and (max-width: 520px) {
 
     .nav > div > a {
-        font-size: 20px;
+        font-size: pxToRem(20);
     }
 
 }
@@ -224,7 +224,7 @@ nav {
     }
 
     .nav > div > a {
-        font-size: 27px;
+        font-size: pxToRem(27);
     }
 
 }
@@ -232,7 +232,7 @@ nav {
 @media only screen and (max-width: 475px) {
 
     .nav > div > a {
-        font-size: 24px;
+        font-size: pxToRem(24);
     }
 }
 
@@ -259,7 +259,7 @@ nav {
     }
 
     .label h1 {
-        font-size: 47px;
+        font-size: pxToRem(47);
         
     }
 
@@ -272,7 +272,7 @@ nav {
 @media only screen and (max-width: 350px) {
     .nav > div > a {
         margin-left: $space-xxl-small;
-        font-size: 23px;
+        font-size: pxToRem(23);
     }
 }
 
