@@ -3,3 +3,79 @@
 @function pxToRem($pxsize,$rembase: 16) {
   @return  ($pxsize / $rembase) + rem;
 }
+
+@mixin boxShadow($arg) {
+    -webkit-box-shadow: $arg;
+            box-shadow: $arg;
+}
+
+@mixin displayFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flexSpaceBetween {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+@mixin flexAliginItems($web, $ms, $ex) {
+    -webkit-box-align: $web;
+        -ms-flex-align: $ms;
+            align-items: $ex;
+}
+
+@mixin flexDirection($web,$web_d, $ms-ex) {
+    -webkit-box-orient: $web;
+    -webkit-box-direction: $web_d;
+        -ms-flex-direction: $ms-ex;
+            flex-direction: $ms-ex;
+}
+
+@mixin flexJustifyContent($web, $ms, $ex) {
+    -webkit-box-pack: $web;
+        -ms-flex-pack: $ms;
+            justify-content: $ex;
+}
+
+@mixin flexWrap($wr) {
+    -ms-flex-wrap: $wr;
+        flex-wrap: $wr;
+}
+
+@mixin hoverEffect {
+    font-weight: bold;
+    -webkit-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+@mixin transition($time) {
+    -webkit-transition: all $time linear;
+    -o-transition: all $time linear;
+    transition: all $time linear;
+}
+
+@mixin transitionOpacity($time) {
+    -webkit-transition: opacity $time linear;
+    -o-transition: opacity $time linear;
+    transition: opacity $time linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

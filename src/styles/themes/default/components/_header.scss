@@ -8,28 +8,18 @@ hr {
 }
 
 nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-shadow:2px 0 16px 2px $c-SilverChalice;
-            box-shadow:2px 0 16px 2px $c-SilverChalice;
+    @include displayFlex();
+    @include flexAliginItems(center,center,center);
+    @include flexJustifyContent(space-around,distribute,space-around);
+    @include boxShadow(2px 0 16px 2px $c-SilverChalice);
     width: $standart-100P;
     height: 140px;
     background-color: $c-Alto;
 }
 
 .label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include displayFlex();
+    @include flexAliginItems(center,center,center);
 }
 
 .label h1 {
@@ -45,31 +35,20 @@ nav {
 }
 
 .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include displayFlex();
+    @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
+    @include flexAliginItems(center,center,center);
 
     border-radius: $space-x-small;
-    -webkit-box-shadow: 6px 6px 9px -2px $c-DustyGrayOpaciti_85;
-            box-shadow: 6px 6px 9px -2px $c-DustyGrayOpaciti_85;
+    @include boxShadow(6px 6px 9px -2px $c-DustyGrayOpaciti_85);
     width: 52%;
     height: 80px;
     background: url(../../../../assets//elements/_elementy_gradient_menu.png) center / auto 560% no-repeat ;
 }
 
 .nav div, .nav div > a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    @include displayFlex();
+    @include flexAliginItems(center,center,center);
 }
 
 .nav > div > a {
@@ -77,9 +56,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: pxToRem(21);
     color: white;
-    -webkit-transition: opacity .3s linear;
-    -o-transition: opacity .3s linear;
-    transition: opacity .3s linear;
+    @include transitionOpacity(.3s);
     cursor: pointer;
 }
 
@@ -98,11 +75,7 @@ nav {
     left: 0;
     z-index: 1;
 
-    -webkit-transition: opacity .2s linear;
-
-    -o-transition: opacity .2s linear;
-
-    transition: opacity .2s linear;
+    @include transitionOpacity(.2s)
 }
 
 .nav > div > a:hover:after {
@@ -114,27 +87,15 @@ nav {
 }
 
 .nav__img img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    @include displayFlex();
     width: $standart-100P;
     margin-top: $space-xxx-small;
     width: $space-x-large;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
+    @include transition(.3s)
 }
 
 .nav__img img:hover {
-    -webkit-transform: scale(1.2, 1.2);
-        -ms-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-    -webkit-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
-    -webkit-transition-duration: 0.15s;
-         -o-transition-duration: 0.15s;
-            transition-duration: 0.15s;
+    @include hoverEffect()
 }
 
 
@@ -213,24 +174,19 @@ nav {
 
     nav {
         display: block;
-        -webkit-box-shadow: none;
-                box-shadow: none;
+        @include boxShadow(none);
         width: $standart-100P;
         height: $standart-120;
     }
 
     .label {
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
+        @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
     }
 
     .nav {
         width: $standart-100P;
-        -ms-flex-wrap: wrap-reverse;
-            flex-wrap: wrap-reverse;
-        -webkit-box-shadow: 0 6px 9px -2px $c-DustyGrayOpaciti_85;
-                box-shadow: 0 6px 9px -2px $c-DustyGrayOpaciti_85;
+        @include flexWrap(wrap-reverse);
+        @include boxShadow(0 6px 9px -2px $c-DustyGrayOpaciti_85);
     }
 
     .nav > div > a {
@@ -247,9 +203,7 @@ nav {
 
     #label__img {
         margin-bottom: $space_-1P;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        @include displayFlex();
     }
 }
 
