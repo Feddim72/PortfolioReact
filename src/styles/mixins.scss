@@ -15,12 +15,6 @@
     display: flex;
 }
 
-@mixin flexSpaceBetween {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-
 @mixin flexAliginItems($web, $ms, $ex) {
     -webkit-box-align: $web;
         -ms-flex-align: $ms;
