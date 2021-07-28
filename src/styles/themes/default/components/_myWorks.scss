@@ -187,7 +187,7 @@
 
     .portfolio-button {
         @include displayFlex();
-        @include flexDirection(center,center,center);
+        @include flexJustifyContent(center,center,center);
     }
 
     .portfolio-button button {

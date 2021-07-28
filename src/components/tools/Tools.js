@@ -9,9 +9,7 @@ import reduxImg from '../../assets/instuments/prog_redux.png';
 import flexboxImg from '../../assets/instuments/flexbox_icon_s.png';
 import programImg from '../../assets/instuments/tool_program_ikona.png';
 import circle_01 from '../../assets/circle/koła_01.png';
-
-// import './Tools.css';
-// import './Tools.media.css';
+import circle_03 from '../../assets/circle/koła_03.png';
 
 const ToolsState = {
     tools : [
@@ -40,6 +38,7 @@ const Tools = (props) => {
 
             <br />
 
+            <img className="circle_03" src={circle_03} alt="circle_03" />
             <img className="circle_01" src={circle_01} alt="circle_01" />
 
             <div className="tools__block">

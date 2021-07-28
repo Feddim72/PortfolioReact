@@ -2,7 +2,7 @@ import React from "react";
 
 const Post = (props) => {
     return (
-        <div class="title">
+        <div className="title">
             <div id="title__avatar">
                 <img src={'https://pbs.twimg.com/media/DT0KWglWkAAK4se.jpg:large'} alt="blog_img" />
             </div>
@@ -10,11 +10,11 @@ const Post = (props) => {
             <div>
                 <div>
                     <div>
-                        <h2 class="general-title general-title--black">&#47;&#47;Title 01 </h2>
-                        <h3 class="general-title general-title--beige"> Secondary Title </h3>
+                        <h2 className="general-title general-title--black">&#47;&#47;Title 01 </h2>
+                        <h3 className="general-title general-title--beige"> Secondary Title </h3>
                     </div>
                     <div>
-                        <span>author, 01.09.2020</span>
+                        <span className="title__date" >author, 01.09.2020</span>
                     </div>
                 </div>
 
