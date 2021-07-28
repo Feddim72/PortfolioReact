@@ -1,0 +1,224 @@
+// MyWorks ---------------------------------------
+
+
+.my-works {
+    position: relative;
+    padding-left: $space-11P;
+}
+
+.my-works h2, .my-works h3 {
+    margin: 0;
+}
+
+// .my-works > div {
+//     margin-left: $space-12P;
+    
+// }
+
+.my-works > div:first-of-type {
+    max-width: 720px;
+}
+
+.my-works .circle_01 {
+    position: absolute;
+    top: 34%;
+    left: 60%;
+    margin-left: 0;
+    width: 35%;
+}
+
+.my-works .circle_01 img {
+    position: absolute;
+    width: $standart-100P;
+}
+
+.my-works__portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+}
+
+.portfolio-block {
+    position: relative;
+    width: 470px;
+    max-height: 355px;
+    box-shadow: 3px 3px 9px -2px $c-Gray;
+    border-radius: $space-xxl-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 $space-medium-38 $space-medium-55 0;
+    background: $c-white;
+}
+
+.portfolio-effect {
+    display: none;
+    background-color: $c-MandysPinkOpacity70;
+    position: absolute;
+    width: $standart-100P;
+    height: $standart-100P;
+    color: $c-white;
+    font-size: 26.3px;
+    font-family: 'Raleway Medium';
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.portfolio-effect h2 {
+    font-size: 38.5px;
+}
+
+.portfolio-effect__title {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: $space-8P;
+}
+
+.portfolio-effect__title, 
+.portfolio-effect__tools {
+    width: 80%;
+}
+
+.portfolio-effect__tools {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-effect__button {
+    display: flex;
+    margin-top: $space-12P;
+    align-items: end;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: $standart-100P;
+}
+
+.portfolio-block:hover .portfolio-effect {
+    display: flex;
+}
+
+
+.portfolio-block__content div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    padding-top: $space-4P;
+}
+
+.portfolio-block__content div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my-works__portfolio a {
+    display: flex;
+    align-items: center;
+}
+
+.my-works__portfolio img {
+    width: 93%;
+}
+
+.my-works__portfolio a img {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    transition: .7s;
+}
+
+.my-works__portfolio a img:hover {
+    transform: scale(1.2, 1.2);
+    transition-timing-function: linear;
+    transition-duration: .15s;
+}
+
+.portfolio-button {
+    display: none;
+}
+
+
+// MyWorks ---------------------------------------
+
+
+// MyWorksMedia ----------------------------------
+
+
+@media only screen and (max-width: 1154px) {
+
+        .my-works__portfolio 
+        .portfolio-block {
+            width: 400px;
+        }
+}
+
+@media only screen and (max-width: $break-laptop-1024) {
+
+    .my-works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3%;
+    }
+
+    .my-works > div:first-of-type {
+        max-width: 828px;
+    }
+
+    .my-works__portfolio {
+        justify-content: center;
+    }
+
+    .portfolio-block {
+        margin: $space-xl-small;
+    }
+
+}
+
+@media only screen and (max-width: $break-mid) {
+
+    .my-works__portfolio {
+        flex-direction: column;
+    }
+
+    .my-works__portfolio .portfolio-block:nth-child(3),
+    .my-works__portfolio .portfolio-block:nth-child(4),
+    .my-works__portfolio .portfolio-block:nth-child(5) {
+        display: none;
+    }
+
+    .my-works__portfolio .portfolio-block {
+        width: 460px;
+    }
+
+    .portfolio-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-button button {
+        height: 40px;
+        margin-bottom: $space-4P;
+    }
+}
+
+@media only screen and (max-width: $break-500) {
+
+    .my-works .circle_01 {
+        top: 19%;
+        left: 5%;
+    }
+
+    .my-works__portfolio {
+        padding: 0 $space-2P;
+    }
+
+    .my-works__portfolio .portfolio-block {
+        width: auto;
+    }
+
+}
+
+
+// MyWorksMedia ----------------------------------
