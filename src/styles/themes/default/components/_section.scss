@@ -17,7 +17,10 @@ button {
     cursor: pointer;
     text-align: center;
     background: $c-MandysPink;
-    border-radius: $space-xxl-small
+    border-radius: $space-xxl-small;
+    width: $button-width;
+    height: $button-height;
+    box-shadow: $box-shadow;
 }
 
 button:hover {
@@ -486,12 +489,6 @@ div a:first-child:hover {
 
 .info__contact p {
     margin-bottom: $space-medium;
-}
-
-.info__but button {
-    width: 197px;
-    height: 67px;
-    box-shadow: 4px 4px 7px -1px $c-DustyGrayOpaciti_66;
 }
 
 .info__but :first-child {
