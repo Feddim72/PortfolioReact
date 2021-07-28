@@ -16,10 +16,10 @@
 .tools__block {
     position: relative;
     padding-top: $space-xl-small;
-    display: flex;
+    @include displayFlex();
     max-width: 1050px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flexJustifyContent(justify,justify,space-between);
+    @include flexWrap(wrap);
 }
 
 .tools h2 {
@@ -28,19 +28,19 @@
 
 .tools__block > div {
     background-color: $c-white;
-    font-size: 13px;
+    font-size: pxToRem(13);
     text-align: center;
     width: $standart-120;
     height: $standart-120;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    @include displayFlex();
+    @include flexAliginItems(end,end,flex-end);
+    @include flexJustifyContent(center,center,center);
     padding-bottom: $space-x-small;
     background-repeat: no-repeat;
     background-position: 50% 20%;
     background-size: 50%;
     border-radius: 6px;
-    box-shadow: 3px 3px 9px -2px $c-Gray;
+    @include boxShadow(3px 3px 9px -2px $c-Gray);
 }
 
 .tools .circle_01 {

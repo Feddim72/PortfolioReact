@@ -1,7 +1,7 @@
 button {
     font-family: 'Montserrat', sans-serif;
     color: $c-white;
-    font-size: 22.4px ;
+    font-size: pxToRem(22.4) ;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -9,10 +9,13 @@ button {
     border-radius: $space-xxl-small;
     width: $button-width;
     height: $button-height;
-    box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
 }
 
 button:hover {
     background:$c-Pancho;
+    -webkit-transition: .15s;
+    -o-transition: .15s;
     transition: .15s;
 }

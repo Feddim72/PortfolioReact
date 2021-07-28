@@ -8,23 +8,23 @@ hr {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow:2px 0 16px 2px $c-SilverChalice;
+    @include displayFlex();
+    @include flexAliginItems(center,center,center);
+    @include flexJustifyContent(space-around,distribute,space-around);
+    @include boxShadow(2px 0 16px 2px $c-SilverChalice);
     width: $standart-100P;
     height: 140px;
     background-color: $c-Alto;
 }
 
 .label {
-    display: flex;
-    align-items: center;
+    @include displayFlex();
+    @include flexAliginItems(center,center,center);
 }
 
 .label h1 {
     color: $c-Silver;
-    font-size: 100px;
+    font-size: pxToRem(100);
     font-weight: normal;
     font-family: 'Monoton', cursive;
     margin: 0;
@@ -35,28 +35,28 @@ nav {
 }
 
 .nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include displayFlex();
+    @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
+    @include flexAliginItems(center,center,center);
 
     border-radius: $space-x-small;
-    box-shadow: 6px 6px 9px -2px $c-DustyGrayOpaciti_85;
+    @include boxShadow(6px 6px 9px -2px $c-DustyGrayOpaciti_85);
     width: 52%;
     height: 80px;
     background: url(../../../../assets//elements/_elementy_gradient_menu.png) center / auto 560% no-repeat ;
 }
 
 .nav div, .nav div > a {
-    display: flex;
-    align-items: center;
+    @include displayFlex();
+    @include flexAliginItems(center,center,center);
 }
 
 .nav > div > a {
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+    font-size: pxToRem(21);
     color: white;
-    transition: opacity .3s linear;
+    @include transitionOpacity(.3s);
     cursor: pointer;
 }
 
@@ -75,7 +75,7 @@ nav {
     left: 0;
     z-index: 1;
 
-    transition: opacity .2s linear;
+    @include transitionOpacity(.2s)
 }
 
 .nav > div > a:hover:after {
@@ -87,17 +87,15 @@ nav {
 }
 
 .nav__img img {
-    display: flex;
+    @include displayFlex();
     width: $standart-100P;
     margin-top: $space-xxx-small;
     width: $space-x-large;
-    transition: .3s;
+    @include transition(.3s)
 }
 
 .nav__img img:hover {
-    transform: scale(1.2, 1.2);
-    transition-timing-function: linear;
-    transition-duration: 0.15s;
+    @include hoverEffect()
 }
 
 
@@ -114,11 +112,11 @@ nav {
     }
 
     .label h1 {
-        font-size: 75px;
+        font-size: pxToRem(75);
     }
 
     .nav > div > a {
-        font-size: 20px;
+        font-size: pxToRem(20);
     }
 
     hr {
@@ -137,7 +135,7 @@ nav {
 @media only screen and (max-width: 1000px) {
 
     .label h1 {
-        font-size: 65px;
+        font-size: pxToRem(65);
     }
 
     .nav {
@@ -145,7 +143,7 @@ nav {
     }
 
     .nav > div > a {
-        font-size: 18px;
+        font-size: pxToRem(18);
     }
 }
 
@@ -160,7 +158,7 @@ nav {
     }
 
     .label h1 {
-        font-size: 52px;
+        font-size: pxToRem(52);
     }
 }
 
@@ -176,23 +174,23 @@ nav {
 
     nav {
         display: block;
-        box-shadow: none;
+        @include boxShadow(none);
         width: $standart-100P;
         height: $standart-120;
     }
 
     .label {
-        justify-content: space-evenly;
+        @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
     }
 
     .nav {
         width: $standart-100P;
-        flex-wrap: wrap-reverse;
-        box-shadow: 0 6px 9px -2px $c-DustyGrayOpaciti_85;
+        @include flexWrap(wrap-reverse);
+        @include boxShadow(0 6px 9px -2px $c-DustyGrayOpaciti_85);
     }
 
     .nav > div > a {
-        font-size: 22px;
+        font-size: pxToRem(22);
     }
 
     #nav__img {
@@ -205,14 +203,14 @@ nav {
 
     #label__img {
         margin-bottom: $space_-1P;
-        display: flex;
+        @include displayFlex();
     }
 }
 
 @media only screen and (max-width: 520px) {
 
     .nav > div > a {
-        font-size: 20px;
+        font-size: pxToRem(20);
     }
 
 }
@@ -224,7 +222,7 @@ nav {
     }
 
     .nav > div > a {
-        font-size: 27px;
+        font-size: pxToRem(27);
     }
 
 }
@@ -232,7 +230,7 @@ nav {
 @media only screen and (max-width: 475px) {
 
     .nav > div > a {
-        font-size: 24px;
+        font-size: pxToRem(24);
     }
 }
 
@@ -259,7 +257,7 @@ nav {
     }
 
     .label h1 {
-        font-size: 47px;
+        font-size: pxToRem(47);
         
     }
 
@@ -272,7 +270,7 @@ nav {
 @media only screen and (max-width: 350px) {
     .nav > div > a {
         margin-left: $space-xxl-small;
-        font-size: 23px;
+        font-size: pxToRem(23);
     }
 }
 
