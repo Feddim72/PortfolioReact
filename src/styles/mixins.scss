@@ -10,9 +10,11 @@
 }
 
 @mixin displayFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex );
+    @each $prefix in $prefixes {
+        display: $prefix;
+    }
+
 }
 
 @mixin flexAliginItems($web, $ms, $ex) {
