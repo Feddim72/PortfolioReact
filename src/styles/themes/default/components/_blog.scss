@@ -15,7 +15,8 @@
     width: 470px;
     max-height: 200px;
     margin-right: $space-medium-50;
-    box-shadow:3px 3px 9px -2px $c-Gray;
+    -webkit-box-shadow:3px 3px 9px -2px $c-Gray;
+            box-shadow:3px 3px 9px -2px $c-Gray;
     border-radius: $space-xxl-small;
 }
 
@@ -35,6 +36,8 @@
 
 .title { 
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -43,8 +46,12 @@
 }
 
 .title > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .title > div > div:nth-child(3) {
@@ -53,13 +60,20 @@
 
 
 .title >  div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 1226px;
 }
 
 .title > div > div:nth-child(5) {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
 }
 
@@ -68,9 +82,15 @@
 }
 
 .title a:hover {
-    transform: scale(1.2, 1.2);
-    transition-timing-function: linear;
-    transition-duration: 0.15s;
+    -webkit-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+    -webkit-transition-duration: 0.15s;
+         -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
 }
 
 
@@ -112,8 +132,12 @@
     }
 
     #title__avatar-1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin-top: $space-standart;
     }
 }
@@ -137,7 +161,10 @@
 @media only screen and (max-width: 570px) {
 
     .title {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .blog_posts {

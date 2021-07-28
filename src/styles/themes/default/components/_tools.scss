@@ -16,10 +16,15 @@
 .tools__block {
     position: relative;
     padding-top: $space-xl-small;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1050px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .tools h2 {
@@ -32,15 +37,22 @@
     text-align: center;
     width: $standart-120;
     height: $standart-120;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: $space-x-small;
     background-repeat: no-repeat;
     background-position: 50% 20%;
     background-size: 50%;
     border-radius: 6px;
-    box-shadow: 3px 3px 9px -2px $c-Gray;
+    -webkit-box-shadow: 3px 3px 9px -2px $c-Gray;
+            box-shadow: 3px 3px 9px -2px $c-Gray;
 }
 
 .tools .circle_01 {

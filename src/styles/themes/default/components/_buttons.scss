@@ -9,10 +9,13 @@ button {
     border-radius: $space-xxl-small;
     width: $button-width;
     height: $button-height;
-    box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
 }
 
 button:hover {
     background:$c-Pancho;
+    -webkit-transition: .15s;
+    -o-transition: .15s;
     transition: .15s;
 }
