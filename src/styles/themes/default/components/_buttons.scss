@@ -1,0 +1,18 @@
+button {
+    font-family: 'Montserrat', sans-serif;
+    color: $c-white;
+    font-size: 22.4px ;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: $c-MandysPink;
+    border-radius: $space-xxl-small;
+    width: $button-width;
+    height: $button-height;
+    box-shadow: $box-shadow;
+}
+
+button:hover {
+    background:$c-Pancho;
+    transition: .15s;
+}

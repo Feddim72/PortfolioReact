@@ -1,0 +1,322 @@
+// Contakt ---------------------------------------
+
+
+.contact h2 {
+    margin: 0;
+}
+
+.contact {
+    position: relative;
+    padding-top: $space-3P;
+    display: flex;
+    justify-content: center;
+    min-height: 690px;
+    background-image: url(../../../../assets//elements/tło_gradient.png);
+}
+
+.contact > div {
+    width: 87vh;
+}
+
+.contact  > div div:nth-child(1) {
+    max-width: 68vh;
+}
+
+.contact__circle_03 {
+    position: absolute;
+    top: 55.5%;
+    left: 27%;
+    width: 31%;
+}
+
+form {
+    position: relative;
+    display: flex;
+}
+
+.contact form div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 62vh;
+    padding-top: $space-1_5P;
+}
+
+.contact form div:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+    margin-left: $space-3P;
+}
+
+.contact input,textarea {
+    width: $standart-100P;
+    height: $space-x-large;
+    margin-bottom: $space-standart;
+    outline: none;
+    border: 0;
+    box-shadow: 3px 3px 9px -2px $c-Gray;
+    border-radius: $space-xxl-small;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    color: $c-Coffee;
+    padding-left: $space-3P;
+}
+
+.contact textarea {
+    height: 222px;
+    resize: none;
+    padding-top: $space-3P;
+    margin-bottom: 0;
+}
+
+
+.contact .contact__autor {
+    width: 550px;
+    margin-left: $space-10P;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact__name div:first-of-type {
+    max-width: 370px;
+    height: 370px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: $space-2P;
+}
+
+.contact__autor .contact__name div:nth-child(2) {
+    text-align: end;
+    margin-top: $space-2P;
+}
+
+.contact__name img {
+    max-width: 370px;
+    border-radius: $space-xxl-small;
+    width: $standart-100P;
+    height: $standart-100P;
+}
+
+.contact__mail {
+    position: relative;
+    right: 62%;
+    bottom: 58%;
+    width: 362px;
+    height: 115px;
+    background-color: $c-whiteOpaciti_93;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 3px 3px 9px -2px $c-Gray;
+}
+
+.contact__mail img {
+    width: $standart-100P;
+}
+
+.contact__mail div:nth-child(1) {
+    display: flex;
+    width: 20%;
+}
+
+
+// Contakt ---------------------------------------
+
+
+// ContaktMedia ----------------------------------
+
+
+@media only screen and (max-width: $break-laptop) {
+
+    .contact > div {
+        margin-left: $space-5P;
+    }
+
+    .contact .contact__autor {
+        margin-right: $space-4P;
+        margin-left: $space-4P;
+    }
+
+    .contact__name {
+        max-width: 322px;
+    }
+
+}
+
+@media only screen and (max-width: $break-laptop-1024) {
+
+    .contact {
+        min-height: 330px;
+        padding-top: $space-8P;
+    }
+
+    .contact .contact__autor {
+        width: 433px;
+    }
+
+    .contact__name div:first-of-type {
+        height: 344px;
+    }
+
+    form button {
+        width: 130px;
+        height: 51px;
+    }
+
+    .contact__mail {
+        width: 264px;
+        height: 92px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .contact {
+        flex-wrap: wrap;
+        padding: $space-standart $space-5P 0 0;
+        max-height: 1400px;
+    }
+
+    .contact > div {
+        margin-left: $space-10P;
+        width: 90%;
+    }
+
+    .contact .contact__autor {
+        position: relative;
+        margin: $space-6P 0 0 $space-30P;
+    }
+
+    .contact__autor 
+    .contact__name div:nth-child(2) {
+        margin-top: $space-6P;
+    }
+
+    .contact__name div:first-of-type {
+        height: 400px;
+    }
+
+    .contact__mail {
+        position: absolute;
+        width: 292px;
+        height: 95px;
+        right: 77%;
+        bottom: 75%;
+    }
+
+    .contact__circle_03 {
+        top: 82.5%;
+        width: 43%;
+    }
+}
+
+@media only screen and (max-width: $break-tablet) {
+
+    .contact > div {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .contact form div:nth-child(1),
+    .contact > div div:nth-child(1) {
+        max-width: 108vh;
+    }
+
+    .contact form div:nth-child(2) {
+        margin-left: 0;
+        margin-top: $space-2P;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form button {
+        width: $space-30P;
+    }
+
+    .contact .contact__autor {
+        position: relative;
+        margin: $space-2P 0 0 $space-30P;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+
+    .contact__mail {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        max-width: 370px;
+        width: $standart-100P;
+        margin-top: $space-standart;
+        margin-bottom: $space-standart;
+    }
+
+    .contact .contact__autor {
+        align-items: center;
+        margin: $space-4P $space-4P 0;
+    }
+
+    .contact__name > div div:nth-child(1) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__autor 
+    .contact__name div:nth-child(2) {
+        max-width: 370px;
+    }
+
+    .contact__autor 
+    .contact__name div:nth-child(2) {
+        text-align: center;
+        margin-top: $space-15P;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contact > div {
+        margin-left: $space-3P;
+    }
+}
+
+@media only screen and (max-width: $break-500) {
+    .contact__autor {
+        margin-top: $space-4P;
+    }
+}
+
+@media only screen and (max-width: $break-425) {
+    .contact > div div:nth-child(1) {
+        max-width: 44vh;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    .contact form div:nth-child(1) {
+        max-width: 45vh;
+    }
+
+    .contact form div:nth-child(2) {
+        margin-left: 0;
+        margin-top: $space-5P;
+    }
+
+    .contact__name div:first-of-type {
+        height: 340px;
+    }
+
+}
+
+
+// ContaktMedia ----------------------------------

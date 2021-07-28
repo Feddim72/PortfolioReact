@@ -1,0 +1,148 @@
+// Tools -----------------------------------------
+
+
+.tools {
+    position: relative;
+    min-height: 345px;
+    background-image: url(../../../../assets/elements/tło_gradient.png);
+}
+
+.tools h2,
+.tools h3, 
+.tools__block {
+    margin: 0 0 0 $space-12P;
+}
+
+.tools__block {
+    position: relative;
+    padding-top: $space-xl-small;
+    display: flex;
+    max-width: 1050px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tools h2 {
+    padding-top: $space-medium-38;
+}
+
+.tools__block > div {
+    background-color: $c-white;
+    font-size: 13px;
+    text-align: center;
+    width: $standart-120;
+    height: $standart-120;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: $space-x-small;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 50%;
+    border-radius: 6px;
+    box-shadow: 3px 3px 9px -2px $c-Gray;
+}
+
+.tools .circle_01 {
+    position: absolute;
+    width: 29%;
+    left: 70%;
+    top: 17%;
+}
+
+// Tools -----------------------------------------
+
+
+// ToolsMedia ------------------------------------
+
+
+@media only screen and (max-width: 1220px) {
+
+    .tools {
+        min-height: $break-450;
+    }
+
+    .tools__block {
+        width: 70%;
+        max-width: 1000px;
+    }
+
+    .tools__block > div {
+        margin-right: $space-6P;
+        margin-bottom: $space-4P;
+    }
+}
+
+@media only screen and (max-width: $break-mid) {
+
+    .tools__block {
+        width: 80%;
+    }
+
+    .tools h2, .tools h3, .tools__block {
+        margin: 0 0 0 $space-8P;
+    }
+    
+}
+
+@media only screen and (max-width: $break800) {
+
+    .tools__block {
+        width: 90%;
+    }
+
+    .tools h2, .tools h3, .tools__block {
+        margin: 0 0 0 $space-6P;
+    }
+    
+}
+
+@media only screen and (max-width: $break-tablet) {
+
+    .tools__block {
+        width: 78%;
+    }
+
+    .tools__block > div {
+        margin-right: $space-4P;
+    }
+
+    .tools .circle_01 {
+        left: 42%;
+        top: 0%;
+        width: 57%;
+    }
+
+}
+
+@media only screen and (max-width: 524px) {
+
+    .tools h2, .tools h3, .tools__block {
+        margin: 0 $space-10P 0;
+    }
+
+}
+
+@media only screen and (max-width: $break-425) {
+
+    .tools .circle_01 {
+        top: 4%;
+    }
+
+    .tools__block > div {
+        background-size: 62%;
+    }
+
+}
+
+@media only screen and (max-width: 335px) {
+
+    .tools__block > div {
+        width: 110px;
+        height: 110px;
+        background-size: 62%;
+    }
+}
+
+
+// ToolsMedia ------------------------------------

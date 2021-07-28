@@ -1,0 +1,157 @@
+// BlogPost --------------------------------------
+
+
+.blog_posts h2, 
+.blog_posts h3 {
+    margin: 0;
+}
+.blog_posts {
+    position: relative;
+    margin-left: $space-12P;
+    max-width: 1488px;
+}
+
+.blog_posts .title img {
+    width: 470px;
+    max-height: 200px;
+    margin-right: 50px;
+    box-shadow:3px 3px 9px -2px $c-Gray;
+    border-radius: $space-xxl-small;
+}
+
+.blog_posts_circle_01 {
+    width: 32%;
+    position: absolute;
+    top: 26%;
+    left: -22%;
+}
+
+.blog_posts_circle_03 {
+    width: 38%;
+    position: absolute;
+    top: 71%;
+    right: 12%;
+}
+
+.title { 
+    position: relative;
+    display: flex;
+}
+
+#title__avatar-1 {
+    display: none;
+}
+
+.title > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title > div > div:nth-child(3) {
+    max-width: 97%;
+}
+
+
+.title >  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    max-width: 1226px;
+}
+
+.title > div > div:nth-child(5) {
+    justify-content: center;
+    
+}
+
+.title a {
+    color: $c-Calico;
+}
+
+.title a:hover {
+    transform: scale(1.2, 1.2);
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+}
+
+
+
+// BlogPost --------------------------------------
+
+
+// BlogPostMedia ---------------------------------
+
+
+@media only screen and (max-width: $break-laptop) {
+    .blog_posts {
+        max-width: 1200px;
+        padding-right: $space-2P;
+    }
+
+    .blog_posts .title img {
+        width: 426px;
+    }
+}
+
+@media only screen and (max-width: $break-laptop-1024) {
+
+    .blog_posts {
+        max-width: 900px;
+        margin-left: $space-10P;
+        margin-right: $space-2P;
+    }
+
+    .blog_posts .title img {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    #title__avatar {
+        display: none;
+    }
+
+    #title__avatar-1 {
+        display: flex;
+        justify-content: center;
+        margin-top: $space-standart;
+    }
+}
+
+@media only screen and (max-width: $break800) {
+
+    .blog_posts {
+        margin-left: $space-6P;
+    }
+
+    .blog_posts .general-title {
+        font-size: 27px;
+    }
+
+    .title {
+        margin-bottom: $space-4P;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+
+    .title {
+        flex-direction: column;
+    }
+
+    .blog_posts {
+        margin: 0;
+        padding: 0 $space-2P 0;
+    }
+
+    .blog_posts .title img {
+        margin-bottom: $space-5P;
+        margin-right: 0;
+        width: 300px;
+    }
+
+}
+
+
+// BlogPostMedia ---------------------------------
