@@ -62,7 +62,7 @@ const Content = (props) => {
                             </p>
                         </div>
 
-                        <div className="info_link">
+                        <div className="info__link">
                             <div>
                                 <div>
                                     <a href="#page-portfolio">See my works</a>
