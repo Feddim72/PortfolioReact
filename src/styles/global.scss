@@ -19,6 +19,31 @@ body {
     text-decoration: none;
 }
 
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+.general-title {
+    font-family: 'Raleway Medium';
+    font-weight: normal;
+    font-size: pxToRem(38);
+}
+
+.general-title--black {
+    color: $c-black;
+}
+
+.general-title--beige {
+    color: $c-Calico;
+}
+
+hr {
+    background-color: $c-white;
+    height: 55px; 
+    width: 2px;
+    border-width: 0;
+}
+
 
 
 

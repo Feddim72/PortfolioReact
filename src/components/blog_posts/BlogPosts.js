@@ -3,9 +3,6 @@ import React from "react";
 
 import circle_01 from '../../assets/circle/koła_01.png';
 import circle_03 from '../../assets/circle/koła_03.png';
-
-// import './BlogPosts.css';
-// import './BlogPosts.media.css';
 import Post from "./Post";
 
 

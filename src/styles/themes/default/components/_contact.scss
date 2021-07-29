@@ -1,10 +1,5 @@
 // Contakt ---------------------------------------
 
-
-.contact h2 {
-    margin: 0;
-}
-
 .contact {
     position: relative;
     padding-top: $space-3P;
@@ -12,115 +7,116 @@
     @include flexJustifyContent(center,center,center);
     min-height: 690px;
     background-image: url(../../../../assets//elements/tło_gradient.png);
+
+    > div {
+        width: 87vh;
+    
+        & div:nth-child(1) {
+            max-width: 68vh;
+        }
+    }
+
+    .contact__circle_03 {
+        position: absolute;
+        top: 55.5%;
+        left: 27%;
+        width: 31%;
+    }
+    
+    form {
+        position: relative;
+        @include displayFlex();
+
+        div{    
+            &:nth-child(1) {
+                @include displayFlex();
+                @include flexWrap(wrap);
+                max-width: 62vh;
+                padding-top: $space-1_5P;
+            }
+
+            &:nth-child(2){
+                @include displayFlex();
+                @include flexAliginItems(end, end, flex-end);
+                margin-left: $space-3P;
+            }
+        }
+    }
+
+    input,textarea {
+        width: $standart-100P;
+        height: $space-x-large;
+        margin-bottom: $space-standart;
+        outline: none;
+        border: 0;
+        @include boxShadow(3px 3px 9px -2px $c-Gray);
+        border-radius: $space-xxl-small;
+        font-family: 'Montserrat', sans-serif;
+        font-size: pxToRem(21);
+        color: $c-Coffee;
+        padding-left: $space-3P;
+    }
+
+    textarea {
+        height: 222px;
+        resize: none;
+        padding-top: $space-3P;
+        margin-bottom: 0;
+    }
+
+    .contact{
+        &__autor {
+            width: 550px;
+            margin-left: $space-10P;
+            @include displayFlex();
+            @include flexDirection(vertical,normal,column);
+            @include flexAliginItems(end, end, flex-end);
+        }
+
+        &__name div:first-of-type {
+            height: 370px;
+            @include displayFlex();
+            @include flexJustifyContent(end,end,flex-end);
+            margin-top: $space-2P;
+        }
+        
+        &__name div:nth-child(2) {
+            text-align: end;
+            margin-top: $space-2P;
+        }
+
+        &__name img {
+            max-width: 370px;
+            border-radius: $space-xxl-small;
+            width: $standart-100P;
+            height: $standart-100P;
+        }
+        
+        &__mail {
+            position: relative;
+            right: 62%;
+            bottom: 58%;
+            width: 362px;
+            height: 115px;
+            background-color: $c-whiteOpaciti_93;
+            border-radius: 5px;
+            @include displayFlex();
+            @include flexAliginItems(center,center,center);
+            @include flexDirection(horizontal,normal,row);
+            @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
+            @include boxShadow(3px 3px 9px -2px $c-Gray);
+
+            img {
+                width: $standart-100P;
+            }
+
+            div:nth-child(1) {
+                @include displayFlex();
+                width: 20%;
+            }
+        }
+    }
 }
-
-.contact > div {
-    width: 87vh;
-}
-
-.contact  > div div:nth-child(1) {
-    max-width: 68vh;
-}
-
-.contact__circle_03 {
-    position: absolute;
-    top: 55.5%;
-    left: 27%;
-    width: 31%;
-}
-
-form {
-    position: relative;
-    @include displayFlex();
-}
-
-.contact form div:nth-child(1) {
-    @include displayFlex();
-    @include flexWrap(wrap);
-    max-width: 62vh;
-    padding-top: $space-1_5P;
-}
-
-.contact form div:nth-child(2){
-    @include displayFlex();
-    @include flexAliginItems(end, end, flex-end);
-    margin-left: $space-3P;
-}
-
-.contact input,textarea {
-    width: $standart-100P;
-    height: $space-x-large;
-    margin-bottom: $space-standart;
-    outline: none;
-    border: 0;
-    @include boxShadow(3px 3px 9px -2px $c-Gray);
-    border-radius: $space-xxl-small;
-    font-family: 'Montserrat', sans-serif;
-    font-size: pxToRem(21);
-    color: $c-Coffee;
-    padding-left: $space-3P;
-}
-
-.contact textarea {
-    height: 222px;
-    resize: none;
-    padding-top: $space-3P;
-    margin-bottom: 0;
-}
-
-
-.contact .contact__autor {
-    width: 550px;
-    margin-left: $space-10P;
-    @include displayFlex();
-    @include flexDirection(vertical,normal,column);
-    @include flexAliginItems(end, end, flex-end);
-}
-
-.contact__name div:first-of-type {
-    max-width: 370px;
-    height: 370px;
-    @include displayFlex();
-    @include flexJustifyContent(end,end,flex-end);
-    margin-top: $space-2P;
-}
-
-.contact__autor .contact__name div:nth-child(2) {
-    text-align: end;
-    margin-top: $space-2P;
-}
-
-.contact__name img {
-    max-width: 370px;
-    border-radius: $space-xxl-small;
-    width: $standart-100P;
-    height: $standart-100P;
-}
-
-.contact__mail {
-    position: relative;
-    right: 62%;
-    bottom: 58%;
-    width: 362px;
-    height: 115px;
-    background-color: $c-whiteOpaciti_93;
-    border-radius: 5px;
-    @include displayFlex();
-    @include flexAliginItems(center,center,center);
-    @include flexDirection(horizontal,normal,row);
-    @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
-    @include boxShadow(3px 3px 9px -2px $c-Gray);
-}
-
-.contact__mail img {
-    width: $standart-100P;
-}
-
-.contact__mail div:nth-child(1) {
-    @include displayFlex();
-    width: 20%;
-}
-
 
 // Contakt ---------------------------------------
 
@@ -130,17 +126,20 @@ form {
 
 @media only screen and (max-width: $break-laptop) {
 
-    .contact > div {
-        margin-left: $space-5P;
-    }
-
-    .contact .contact__autor {
-        margin-right: $space-4P;
-        margin-left: $space-4P;
-    }
-
-    .contact__name {
-        max-width: 322px;
+    .contact {
+        
+        > div {
+            margin-left: $space-5P;
+        }
+    
+        .contact__autor {
+            margin-right: $space-4P;
+            margin-left: $space-4P;
+        }
+    
+        .contact__name {
+            max-width: 322px;
+        }
     }
 
 }
@@ -150,24 +149,26 @@ form {
     .contact {
         min-height: 330px;
         padding-top: $space-8P;
-    }
 
-    .contact .contact__autor {
-        width: 433px;
-    }
+        form button {
+            width: 130px;
+            height: 51px;
+        }
 
-    .contact__name div:first-of-type {
-        height: 344px;
-    }
-
-    form button {
-        width: 130px;
-        height: 51px;
-    }
-
-    .contact__mail {
-        width: 264px;
-        height: 92px;
+        .contact {
+            &__autor {
+                width: 433px;
+            }
+    
+            &__name div:first-of-type {
+                height: 344px;
+            }
+        
+            &__mail {
+                width: 264px;
+                height: 92px;
+            }
+        }
     }
 
 }
@@ -175,109 +176,129 @@ form {
 @media only screen and (max-width: 900px) {
 
     .contact {
+
         @include flexWrap(wrap);
-        padding: $space-standart $space-5P 0 0;
+        padding: $space-standart $space-5P $space-xl-small 0;
         max-height: 1400px;
-    }
 
-    .contact > div {
-        margin-left: $space-10P;
-        width: 90%;
-    }
-
-    .contact .contact__autor {
-        position: relative;
-        margin: $space-6P 0 0 $space-30P;
-    }
-
-    .contact__autor 
-    .contact__name div:nth-child(2) {
-        margin-top: $space-6P;
-    }
-
-    .contact__name div:first-of-type {
-        height: 400px;
-    }
-
-    .contact__mail {
-        position: absolute;
-        width: 292px;
-        height: 95px;
-        right: 77%;
-        bottom: 75%;
-    }
-
-    .contact__circle_03 {
-        top: 82.5%;
-        width: 43%;
+        > div {
+            margin-left: $space-10P;
+            width: 90%;
+        }
+    
+        .contact {
+            &__autor {
+                position: relative;
+                margin: $space-6P 0 0 $space-30P;
+            }
+        
+            &__autor 
+            &__name div:nth-child(2) {
+                margin-top: $space-6P;
+            }
+        
+            &__name div:first-of-type {
+                height: 400px;
+            }
+        
+            &__mail {
+                position: absolute;
+                width: 292px;
+                height: 95px;
+                right: 77%;
+                bottom: 75%;
+            }
+        
+            &__circle_03 {
+                top: 82.5%;
+                width: 43%;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: $break-tablet) {
 
-    .contact > div {
-        margin-left: 0;
-        width: 90%;
-    }
+    .contact {
+        > div {
+            margin-left: 0;
+            width: 90%;
+        }
+    
+        form {
+            @include flexDirection(vertical,normal,column);
+        }
+    
+        form div:nth-child(1),
+        > div div:nth-child(1) {
+            max-width: 108vh;
+        }
+    
+        form {
 
-    form {
-        @include flexDirection(vertical,normal,column);
+            div:nth-child(2) {
+                margin-left: 0;
+                margin-top: $space-2P;
+                @include flexJustifyContent(center,center,center);
+                @include flexAliginItems(center,center,center);
+            }
+        
+            button {
+                width: $space-30P;
+            }
+        }
+    
+        .contact__autor {
+            position: relative;
+            margin: $space-2P 0 0 $space-30P;
+        }
     }
-
-    .contact form div:nth-child(1),
-    .contact > div div:nth-child(1) {
-        max-width: 108vh;
-    }
-
-    .contact form div:nth-child(2) {
-        margin-left: 0;
-        margin-top: $space-2P;
-        @include flexJustifyContent(center,center,center);
-        @include flexAliginItems(center,center,center);
-    }
-
-    form button {
-        width: $space-30P;
-    }
-
-    .contact .contact__autor {
-        position: relative;
-        margin: $space-2P 0 0 $space-30P;
-    }
+    
 }
 
 @media only screen and (max-width: 655px) {
 
-    .contact__mail {
-        position: relative;
-        right: 0;
-        bottom: 0;
-        max-width: 370px;
-        width: $standart-100P;
-        margin-top: $space-standart;
-        margin-bottom: $space-standart;
-    }
+    
 
-    .contact .contact__autor {
-        @include flexAliginItems(center,center,center);
-        margin: $space-4P $space-4P 0;
-    }
+    .contact {
 
-    .contact__name > div div:nth-child(1) {
-        @include flexAliginItems(center,center,center);
-        @include displayFlex();
-        @include flexDirection(vertical,normal,column);
-    }
+        > div div:nth-child(1) {
+            max-width: 68vh;
+        }
 
-    .contact__autor 
-    .contact__name div:nth-child(2) {
-        max-width: 370px;
-    }
-
-    .contact__autor 
-    .contact__name div:nth-child(2) {
-        text-align: center;
-        margin-top: $space-15P;
+        .contact {
+            &__autor {
+                @include flexAliginItems(center,center,center);
+                margin: $space-4P $space-4P 0;
+            }
+        
+            &__name > div div:nth-child(1) {
+                @include flexAliginItems(center,center,center);
+                @include displayFlex();
+                @include flexDirection(vertical,normal,column);
+            }
+        
+            &__autor 
+            &__name div:nth-child(2) {
+                max-width: 370px;
+            }
+        
+            &__autor 
+            &__name div:nth-child(2) {
+                text-align: center;
+                margin-top: $space-15P;
+            }
+    
+            &__mail {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                max-width: 370px;
+                width: $standart-100P;
+                margin-top: $space-standart;
+                margin-bottom: $space-standart;
+            }
+        }
     }
 
 }
@@ -295,25 +316,27 @@ form {
 }
 
 @media only screen and (max-width: $break-425) {
-    .contact > div div:nth-child(1) {
-        max-width: 44vh;
-    }
+    .contact {
+        > div div:nth-child(1) {
+            max-width: 44vh;
+        }
+    
+        form {
+            @include flexWrap(wrap);
 
-    form {
-        @include flexWrap(wrap);
-    }
+            div:nth-child(1) {
+                max-width: 45vh;
+            }
 
-    .contact form div:nth-child(1) {
-        max-width: 45vh;
-    }
-
-    .contact form div:nth-child(2) {
-        margin-left: 0;
-        margin-top: $space-5P;
-    }
-
-    .contact__name div:first-of-type {
-        height: 340px;
+            div:nth-child(2) {
+                margin-left: 0;
+                margin-top: $space-5P;
+            }
+        }
+        
+        .contact__name div:first-of-type {
+            height: 340px;
+        }
     }
 
 }

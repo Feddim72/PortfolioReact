@@ -4,16 +4,11 @@ import React from "react";
 import circle_1 from '../../assets/circle/koła_1.png';
 import circle_02 from '../../assets/circle/koła_02.png';
 import circle_03 from '../../assets/circle/koła_03.png';
-import circle_3 from '../../assets/circle/koła_3.png';
 import circle_333 from '../../assets/circle/koła_333.png';
 
 import bit_bucket_icon from '../../assets/ico/bit_bucket_icon.png';
 import dev_icon from '../../assets/ico/dev_icon.png';
-import easy_code_button from '../../assets/ico/easy_code_button.png';
 import avatarContent from '../../assets/avatar/avatarContent.jpg';
-
-// import './Content.css';
-// import './Content.media.css';
 import ContentAbout from "./ContentAbout";
 
 
@@ -62,7 +57,7 @@ const Content = (props) => {
                             </p>
                         </div>
 
-                        <div className="info_link">
+                        <div className="info__link">
                             <div>
                                 <div>
                                     <a href="#page-portfolio">See my works</a>
