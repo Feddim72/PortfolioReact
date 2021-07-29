@@ -4,11 +4,6 @@ import twitter from '../../assets/ico/twitter_icon.png';
 import facebook from '../../assets/ico/facebook_icon.png';
 import linkedin from '../../assets/ico/linkedin_icon.png';
 
-// import './Nav.css';
-// import './Nav.media.css';
-
-
-
 
 const Nav = (props) => {
     return (

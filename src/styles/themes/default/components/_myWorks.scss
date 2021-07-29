@@ -4,133 +4,135 @@
 .my-works {
     position: relative;
     padding-left: $space-11P;
+
+    h2, h3 {
+        margin: 0;
+    }
+
+    > div:first-of-type {
+        max-width: 720px;
+    }
+
+    .circle_01 {
+        position: absolute;
+        top: 34%;
+        left: 60%;
+        margin-left: 0;
+        width: 35%;
+    }
+    
+    .circle_01 img {
+        position: absolute;
+        width: $standart-100P;
+    }
+    
+    .my-works__portfolio {
+        @include displayFlex();
+        @include flexWrap(wrap);
+        max-width: 1600px;
+
+        a {
+            @include displayFlex();
+            @include flexAliginItems(center,center,center);
+
+            img {
+                width: 65px;
+                height: 65px;
+                @include displayFlex();
+                @include flexAliginItems(center,center,center);
+                @include transition(.2s);
+            }
+
+            img:hover {
+                @include hoverEffect();
+            }
+        }
+
+        img {
+            width: 93%;
+        }
+
+        .portfolio {
+            &-block {
+                position: relative;
+                width: 470px;
+                max-height: 355px;
+                @include boxShadow(3px 3px 9px -2px $c-Gray);
+                border-radius: $space-xxl-small;
+                @include displayFlex();
+                @include flexDirection(vertical,normal,column);
+                @include flexJustifyContent(end,end,flex-end);
+                margin: 0 $space-medium-38 $space-medium-55 0;
+                background: $c-white;
+            }
+            
+            &-effect {
+                display: none;
+                background-color: $c-MandysPinkOpacity70;
+                position: absolute;
+                width: $standart-100P;
+                height: $standart-100P;
+                color: $c-white;
+                font-size: pxToRem(26.3);
+                font-family: 'Raleway Medium';
+                @include flexDirection(vertical,normal,column);
+                @include flexAliginItems(center,center,center);
+                @include flexJustifyContent(end,end,flex-end);
+    
+                h2 {
+                    font-size: pxToRem(38.5);
+                }
+            }
+            
+            &-effect__title {
+                @include flexDirection(vertical,normal,column);
+                @include displayFlex();
+                margin-bottom: $space-8P;
+            }
+            
+            &-effect__title, 
+            &-effect__tools {
+                width: 80%;
+            }
+            
+            &-effect__tools {
+                @include flexDirection(vertical,normal,column);
+                @include displayFlex();
+                @include flexDirection(center,center,center);
+            }
+            
+            &-effect__button {
+                @include displayFlex();
+                margin-top: $space-12P;
+                @include flexAliginItems(end, end,end);
+                @include flexDirection(horizontal,normal,row);
+                @include flexJustifyContent(end,end,flex-end);
+                width: $standart-100P;
+            }
+            
+            &-block:hover .portfolio-effect {
+                @include displayFlex();
+            }
+            
+            &-block__content div:nth-child(1) {
+                @include displayFlex();
+                @include flexJustifyContent(center,center,center);
+                padding-top: $space-4P;
+            }
+            
+            &-block__content div:nth-child(2) {
+                @include displayFlex();
+                @include flexJustifyContent(end,end,flex-end);
+            }
+            
+            &-button {
+                display: none;
+            }
+        }
+    }
+
+
 }
-
-.my-works h2, .my-works h3 {
-    margin: 0;
-}
-
-.my-works > div:first-of-type {
-    max-width: 720px;
-}
-
-.my-works .circle_01 {
-    position: absolute;
-    top: 34%;
-    left: 60%;
-    margin-left: 0;
-    width: 35%;
-}
-
-.my-works .circle_01 img {
-    position: absolute;
-    width: $standart-100P;
-}
-
-.my-works__portfolio {
-    @include displayFlex();
-    @include flexWrap(wrap);
-    max-width: 1600px;
-}
-
-.portfolio-block {
-    position: relative;
-    width: 470px;
-    max-height: 355px;
-    @include boxShadow(3px 3px 9px -2px $c-Gray);
-    border-radius: $space-xxl-small;
-    @include displayFlex();
-    @include flexDirection(vertical,normal,column);
-    @include flexJustifyContent(end,end,flex-end);
-    margin: 0 $space-medium-38 $space-medium-55 0;
-    background: $c-white;
-}
-
-.portfolio-effect {
-    display: none;
-    background-color: $c-MandysPinkOpacity70;
-    position: absolute;
-    width: $standart-100P;
-    height: $standart-100P;
-    color: $c-white;
-    font-size: pxToRem(26.3);
-    font-family: 'Raleway Medium';
-    @include flexDirection(vertical,normal,column);
-    @include flexAliginItems(center,center,center);
-    @include flexJustifyContent(end,end,flex-end);
-}
-
-.portfolio-effect h2 {
-    font-size: pxToRem(38.5);
-}
-
-.portfolio-effect__title {
-    @include flexDirection(vertical,normal,column);
-    @include displayFlex();
-    margin-bottom: $space-8P;
-}
-
-.portfolio-effect__title, 
-.portfolio-effect__tools {
-    width: 80%;
-}
-
-.portfolio-effect__tools {
-    @include flexDirection(vertical,normal,column);
-    @include displayFlex();
-    @include flexDirection(center,center,center);
-}
-
-.portfolio-effect__button {
-    @include displayFlex();
-    margin-top: $space-12P;
-    @include flexAliginItems(end, end,end);
-    @include flexDirection(horizontal,normal,row);
-    @include flexJustifyContent(end,end,flex-end);
-    width: $standart-100P;
-}
-
-.portfolio-block:hover .portfolio-effect {
-    @include displayFlex();
-}
-
-
-.portfolio-block__content div:nth-child(1) {
-    @include displayFlex();
-    @include flexJustifyContent(center,center,center);
-    padding-top: $space-4P;
-}
-
-.portfolio-block__content div:nth-child(2) {
-    @include displayFlex();
-    @include flexJustifyContent(end,end,flex-end);
-}
-
-.my-works__portfolio a {
-    @include displayFlex();
-    @include flexAliginItems(center,center,center);
-}
-
-.my-works__portfolio img {
-    width: 93%;
-}
-
-.my-works__portfolio a img {
-    width: 65px;
-    height: 65px;
-    @include displayFlex();
-    @include flexAliginItems(center,center,center);
-    @include transition(.2s);
-}
-
-.my-works__portfolio a img:hover {
-    @include hoverEffect();
-}
-
-.portfolio-button {
-    display: none;
-}
-
 
 // MyWorks ---------------------------------------
 
@@ -140,9 +142,11 @@
 
 @media only screen and (max-width: 1154px) {
 
-    .my-works__portfolio 
-    .portfolio-block {
-        width: 400px;
+        .my-works {
+            .my-works__portfolio 
+            .portfolio-block {
+            width: 400px;
+        }
     }
 }
 
@@ -153,62 +157,74 @@
         @include flexDirection(vertical,normal,column);
         @include flexAliginItems(center,center,center);
         padding: 0 $space-3P;
+
+        > div:first-of-type {
+            max-width: 828px;
+        }
+    
+        .my-works__portfolio {
+            @include flexDirection(center,center,center);
+        }
+    
+        .portfolio-block {
+            margin: $space-xl-small;
+        }
     }
 
-    .my-works > div:first-of-type {
-        max-width: 828px;
-    }
-
-    .my-works__portfolio {
-        @include flexDirection(center,center,center);
-    }
-
-    .portfolio-block {
-        margin: $space-xl-small;
-    }
+    
 
 }
 
 @media only screen and (max-width: $break-mid) {
 
-    .my-works__portfolio {
-        @include flexDirection(vertical,normal,column);
+    .my-works {
+        .my-works{
+            &__portfolio {
+                @include flexDirection(vertical,normal,column);
+            }
+        
+            &__portfolio .portfolio-block:nth-child(3),
+            &__portfolio .portfolio-block:nth-child(4),
+            &__portfolio .portfolio-block:nth-child(5) {
+                display: none;
+            }
+        
+            &__portfolio .portfolio-block {
+                width: 460px;
+            }
+        }
+        
+        .my-works__portfolio {
+            .portfolio-button {
+                @include displayFlex();
+                @include flexJustifyContent(center,center,center);
+    
+                button {
+                    font-size: pxToRem(18);
+                    height: 40px;
+                    margin-bottom: $space-4P;
+                }
+            }
+        }
+        
     }
-
-    .my-works__portfolio .portfolio-block:nth-child(3),
-    .my-works__portfolio .portfolio-block:nth-child(4),
-    .my-works__portfolio .portfolio-block:nth-child(5) {
-        display: none;
-    }
-
-    .my-works__portfolio .portfolio-block {
-        width: 460px;
-    }
-
-    .portfolio-button {
-        @include displayFlex();
-        @include flexJustifyContent(center,center,center);
-    }
-
-    .portfolio-button button {
-        height: 40px;
-        margin-bottom: $space-4P;
-    }
-    }
+}
 
     @media only screen and (max-width: $break-500) {
 
-    .my-works .circle_01 {
-        top: 19%;
-        left: 5%;
-    }
+    .my-works {
+        .circle_01 {
+            top: 19%;
+            left: 5%;
+        }
 
-    .my-works__portfolio {
-        padding: 0 $space-2P;
-    }
-
-    .my-works__portfolio .portfolio-block {
-        width: auto;
+        .my-works__portfolio {
+            padding: 0 $space-2P;
+    
+            .portfolio-block {
+                width: auto;
+            }
+        }
     }
 
 }

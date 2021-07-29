@@ -1,12 +1,5 @@
 // Nav -------------------------------------------
 
-hr {
-    background-color: $c-white;
-    height: 55px; 
-    width: 2px;
-    border-width: 0;
-}
-
 nav {
     @include displayFlex();
     @include flexAliginItems(center,center,center);
@@ -15,89 +8,94 @@ nav {
     width: $standart-100P;
     height: 140px;
     background-color: $c-Alto;
+
+    .label {
+        @include displayFlex();
+        @include flexAliginItems(center,center,center);
+
+        h1 {
+            color: $c-Silver;
+            font-size: pxToRem(100);
+            font-weight: normal;
+            font-family: 'Monoton', cursive;
+            margin: 0;
+        }
+    }
+    
+    #label__img {
+        display: none;
+    }
+    
+    .nav {
+        @include displayFlex();
+        @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
+        @include flexAliginItems(center,center,center);
+    
+        border-radius: $space-x-small;
+        @include boxShadow(6px 6px 9px -2px $c-DustyGrayOpaciti_85);
+        width: 52%;
+        height: 80px;
+        background: url(../../../../assets//elements/_elementy_gradient_menu.png) center / auto 560% no-repeat ;
+    
+        div {
+            @include displayFlex();
+            @include flexAliginItems(center,center,center);
+        }
+
+        > div > {
+
+            a {
+                position: relative;
+                font-family: 'Montserrat', sans-serif;
+                font-size: pxToRem(21);
+                color: white;
+                @include transitionOpacity(.3s);
+                @include displayFlex();
+                @include flexAliginItems(center,center,center);
+            }
+    
+            a:after {
+                content: '';
+                display: block;
+                width: $standart-100P;
+                height: 3px;
+                border-radius: $standart-100;
+            
+                background-color: $c-HummingBird;
+                opacity: 0;
+            
+                position: absolute;
+                top: 106%;
+                left: 0;
+                z-index: 1;
+            
+                @include transitionOpacity(.2s)
+            }
+    
+            a:hover:after {
+                opacity: 1;
+            }
+    
+        }
+
+        .nav__img {
+            margin-left: $space-1P;
+    
+            img {
+                @include displayFlex();
+                width: $standart-100P;
+                margin-top: $space-xxx-small;
+                width: $space-x-large;
+                @include transition(.3s)
+            }
+    
+            img:hover {
+                @include hoverEffect()
+            }
+        }
+    }
+    
 }
-
-.label {
-    @include displayFlex();
-    @include flexAliginItems(center,center,center);
-}
-
-.label h1 {
-    color: $c-Silver;
-    font-size: pxToRem(100);
-    font-weight: normal;
-    font-family: 'Monoton', cursive;
-    margin: 0;
-}
-
-#label__img {
-    display: none;
-}
-
-.nav {
-    @include displayFlex();
-    @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
-    @include flexAliginItems(center,center,center);
-
-    border-radius: $space-x-small;
-    @include boxShadow(6px 6px 9px -2px $c-DustyGrayOpaciti_85);
-    width: 52%;
-    height: 80px;
-    background: url(../../../../assets//elements/_elementy_gradient_menu.png) center / auto 560% no-repeat ;
-}
-
-.nav div, .nav div > a {
-    @include displayFlex();
-    @include flexAliginItems(center,center,center);
-}
-
-.nav > div > a {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-size: pxToRem(21);
-    color: white;
-    @include transitionOpacity(.3s);
-    cursor: pointer;
-}
-
-.nav > div > a:after {
-    content: '';
-    display: block;
-    width: $standart-100P;
-    height: 3px;
-    border-radius: $standart-100;
-
-    background-color: $c-HummingBird;
-    opacity: 0;
-
-    position: absolute;
-    top: 106%;
-    left: 0;
-    z-index: 1;
-
-    @include transitionOpacity(.2s)
-}
-
-.nav > div > a:hover:after {
-    opacity: 1;
-}
-
-.nav__img {
-    margin-left: $space-1P;
-}
-
-.nav__img img {
-    @include displayFlex();
-    width: $standart-100P;
-    margin-top: $space-xxx-small;
-    width: $space-x-large;
-    @include transition(.3s)
-}
-
-.nav__img img:hover {
-    @include hoverEffect()
-}
-
 
 // Nav -------------------------------------------
 
@@ -106,66 +104,78 @@ nav {
 
 @media only screen and (max-width: $break-laptop) {
 
-    .nav {
-        width: 65%;
-        height: 80px;
-    }
-
-    .label h1 {
-        font-size: pxToRem(75);
-    }
-
-    .nav > div > a {
-        font-size: pxToRem(20);
-    }
-
-    hr {
-        height: 49px;
+    nav {
+        .label h1 {
+            font-size: pxToRem(75);
+        }
+        
+        .nav {
+            width: 65%;
+            height: 80px;
+    
+            > div > a {
+                font-size: pxToRem(20);
+            }
+    
+            hr {
+                height: 49px;
+            }
+        }
     }
 
 }
 
 @media only screen and (max-width: 1100px) {
 
-    .nav {
-        width: 78%;
+    nav {
+        .nav {
+            width: 78%;
+        }
     }
+    
 }
 
 @media only screen and (max-width: 1000px) {
 
-    .label h1 {
-        font-size: pxToRem(65);
-    }
-
-    .nav {
-        height: 70px;
-    }
-
-    .nav > div > a {
-        font-size: pxToRem(18);
+    nav {
+        .label h1 {
+            font-size: pxToRem(65);
+        }
+    
+        .nav {
+            height: 70px;
+    
+            > div > a {
+                font-size: pxToRem(18);
+            }
+        }
     }
 }
 
 @media only screen and (max-width: $break800) {
 
-    .nav {
-        width: 83%;
+    nav {
+        .label h1 {
+            font-size: pxToRem(52);
+        }
+    
+        .nav {
+            width: 83%;
+    
+            &__img img {
+                margin-top: 0;
+            }
+        }
     }
-
-    .nav__img img {
-        margin-top: 0;
-    }
-
-    .label h1 {
-        font-size: pxToRem(52);
-    }
+    
 }
 
 @media only screen and (max-width: $break-tablet) {
 
-    hr {
-        height: 46px;
+    nav {
+        hr {
+            height: 46px;
+        }
     }
 
 }
@@ -177,71 +187,80 @@ nav {
         @include boxShadow(none);
         width: $standart-100P;
         height: $standart-120;
+
+        .label {
+            @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
+        }
+    
+        .nav {
+            width: $standart-100P;
+            @include flexWrap(wrap-reverse);
+            @include boxShadow(0 6px 9px -2px $c-DustyGrayOpaciti_85);
+
+            > div > a {
+                font-size: pxToRem(22);
+            }
+        }
+    
+        #nav__img {
+            display: none;
+        }
+    
+        #hr {
+            display: none;   
+        }
+    
+        #label__img {
+            margin-bottom: $space_-1P;
+            @include displayFlex();
+        }
     }
 
-    .label {
-        @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
-    }
-
-    .nav {
-        width: $standart-100P;
-        @include flexWrap(wrap-reverse);
-        @include boxShadow(0 6px 9px -2px $c-DustyGrayOpaciti_85);
-    }
-
-    .nav > div > a {
-        font-size: pxToRem(22);
-    }
-
-    #nav__img {
-        display: none;
-    }
-
-    #hr {
-        display: none;   
-    }
-
-    #label__img {
-        margin-bottom: $space_-1P;
-        @include displayFlex();
-    }
+    
 }
 
 @media only screen and (max-width: 520px) {
 
-    .nav > div > a {
-        font-size: pxToRem(20);
+    nav {
+        .nav > div > a {
+            font-size: pxToRem(20);
+        }
     }
 
 }
 
 @media only screen and (max-width: $break-530) {
 
-    .nav {
-        height: 85px;
+    nav {
+        .nav {
+            height: 85px;
+    
+            > div > a {
+                font-size: pxToRem(27);
+            }
+        }
     }
-
-    .nav > div > a {
-        font-size: pxToRem(27);
-    }
-
 }
 
 @media only screen and (max-width: 475px) {
 
-    .nav > div > a {
-        font-size: pxToRem(24);
+    nav {
+        .nav > div > a {
+            font-size: pxToRem(24);
+        }
     }
 }
 
 @media only screen and (max-width: $break-450) {
 
-    .nav {
-        height: 85px;
-    }
-
-    .nav > div > a {
-        margin: 0 $space-xxl-small;
+    nav {
+        .nav {
+            height: 85px;
+    
+            > div > a {
+                margin: 0 $space-xxl-small;
+            }
+        }
     }
 
 }
@@ -250,29 +269,29 @@ nav {
 
     nav {
         height: $standart-120;
-    }
 
-    .label {
-        margin-left: $space-5P;
+        .label {
+            margin-left: $space-5P;
+    
+            h1 {
+                font-size: pxToRem(47);
+            }
+        }
+    
+        .nav {
+            height: 80px;
+        }
     }
-
-    .label h1 {
-        font-size: pxToRem(47);
-        
-    }
-
-    .nav {
-        height: 80px;
-    }
-
 }
 
 @media only screen and (max-width: 350px) {
-    .nav > div > a {
-        margin-left: $space-xxl-small;
-        font-size: pxToRem(23);
+    nav {
+        .nav > div > a {
+            margin-left: $space-xxl-small;
+            font-size: pxToRem(23);
+        }
     }
 }
 
 
-// NavMedia --------------------------------------
+// NavMedia  --------------------------------------
