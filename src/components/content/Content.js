@@ -1,5 +1,5 @@
 import React from "react";
-
+import ContentAbout from "./ContentAbout";
 
 import circle_1 from '../../assets/circle/koła_1.png';
 import circle_02 from '../../assets/circle/koła_02.png';
@@ -9,7 +9,7 @@ import circle_333 from '../../assets/circle/koła_333.png';
 import bit_bucket_icon from '../../assets/ico/bit_bucket_icon.png';
 import dev_icon from '../../assets/ico/dev_icon.png';
 import avatarContent from '../../assets/avatar/avatarContent.jpg';
-import ContentAbout from "./ContentAbout";
+
 
 
 // dorobic

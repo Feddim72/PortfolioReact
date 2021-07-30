@@ -1,4 +1,5 @@
 import React from "react";
+import MyWorksBlock from "./MyWorksBlock";
 
 import portfolio_case_01 from '../../assets/portfolio/portfolio_case_01.png';
 import portfolio_case_02 from '../../assets/portfolio/portfolio_case_02.png';
@@ -10,9 +11,6 @@ import bit_bucket_icon from '../../assets/ico/bit_bucket_icon.png';
 import external_link_icon from '../../assets/ico/external_link_icon.png';
 import circle_1 from '../../assets/circle/koła_1.png';
 
-// import './MyWorks.css';
-// import './MyWorks.media.css';
-import MyWorksBlock from "./MyWorksBlock";
 
 const portfolioState = {
     block: [

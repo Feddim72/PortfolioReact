@@ -178,7 +178,7 @@
     .contact {
 
         @include flexWrap(wrap);
-        padding: $space-standart $space-5P $space-xl-small 0;
+        padding: $space-standart $space-5P $space-xl-small $space-5P;
         max-height: 1400px;
 
         > div {
@@ -250,7 +250,7 @@
     
         .contact__autor {
             position: relative;
-            margin: $space-2P 0 0 $space-30P;
+            margin: $space-2P 0 0 0;
         }
     }
     
@@ -304,19 +304,25 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .contact > div {
-        margin-left: $space-3P;
+    .contact {
+        > div {
+            margin-left: $space-3P;
+        }
     }
 }
 
 @media only screen and (max-width: $break-500) {
-    .contact__autor {
-        margin-top: $space-4P;
+    .contact {
+        .contact__autor {
+            margin-top: $space-4P;
+        }
     }
 }
 
 @media only screen and (max-width: $break-425) {
     .contact {
+        padding: 10px $space-2P ;
+
         > div div:nth-child(1) {
             max-width: 44vh;
         }
