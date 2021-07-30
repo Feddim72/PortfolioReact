@@ -69,7 +69,9 @@
             width: 550px;
             margin-left: $space-10P;
             @include displayFlex();
-            @include flexDirection(vertical,normal,column);
+            // @include flexDirection(vertical,normal,column);
+            @include flex(vertical,normal,column);
+
             @include flexAliginItems(end, end, flex-end);
         }
 
@@ -91,7 +93,7 @@
             width: $standart-100P;
             height: $standart-100P;
         }
-        
+// Dorobic flex 
         &__mail {
             position: relative;
             right: 62%;
@@ -101,8 +103,9 @@
             background-color: $c-whiteOpaciti_93;
             border-radius: 5px;
             @include displayFlex();
-            @include flexAliginItems(center,center,center);
-            @include flexDirection(horizontal,normal,row);
+            @include flex(center,center,false,center);
+            // @include flexAliginItems(center,center,center);
+            @include flex(horizontal,normal,row);
             @include flexJustifyContent(space-evenly,space-evenly,space-evenly);
             @include boxShadow(3px 3px 9px -2px $c-Gray);
 
