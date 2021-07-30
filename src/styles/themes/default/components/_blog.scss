@@ -48,12 +48,6 @@
             max-width: 97%;
         }
 
-        & :nth-child(2) {
-            @include displayFlex();
-            @include flexDirection(vertical,normal,column);
-            max-width: 1226px;
-        }
-
         & > div:nth-child(5) {
             @include flexJustifyContent(center,center,center)
         }
@@ -141,7 +135,6 @@
         padding: 0 $space-2P 0;
         
         .title {
-            @include flexDirection(vertical,normal,column);
 
             img {
                 margin-bottom: $space-5P;

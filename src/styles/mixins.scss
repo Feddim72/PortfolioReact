@@ -9,6 +9,26 @@
             box-shadow: $arg;
 }
 
+@mixin flex (
+    $boxO: false,
+    $boxD: false,
+    $flexDirection:false,
+    $flexAliginItems: false
+    ) {
+    @if $flexDirection {
+        -webkit-box-orient: $boxO;
+        -webkit-box-direction: $boxD;
+            -ms-flex-direction: $flexDirection;
+                flex-direction: $flexDirection;
+    }
+
+    @if $flexAliginItems  {
+        -webkit-box-align: $boxO;
+        -ms-flex-align: $boxD;
+            align-items: $flexAliginItems;
+    }
+}
+
 @mixin displayFlex {
     $prefixes: (-webkit-box, -ms-flexbox, -webkit-flex, flex );
     @each $prefix in $prefixes {
