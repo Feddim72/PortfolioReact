@@ -5,56 +5,61 @@
     position: relative;
     min-height: 345px;
     background-image: url(../../../../assets/elements/tło_gradient.png);
+
+    h2 {
+        padding-top: $space-medium-38;
+    }
+
+    .circle_01 {
+        position: absolute;
+        width: 29%;
+        left: 70%;
+        top: 17%;
+    }
+
+    .circle_03 {
+        position: absolute;
+        top: -113%;
+        left: -23%;
+        width: 40%;
+    }
+
+    h2,
+    h3, 
+    .tools__block {
+        margin: 0 0 0 $space-12P;
+    }
+
+    .tools__block {
+        position: relative;
+        padding-top: $space-xl-small;
+        @include displayFlex();
+        max-width: 1050px;
+        @include flexJustifyContent(justify,justify,space-between);
+        @include flexWrap(wrap);
+
+        > div {
+            background-color: $c-white;
+            font-size: pxToRem(13);
+            text-align: center;
+            width: $standart-120;
+            height: $standart-120;
+            @include displayFlex();
+            @include flexAliginItems(end,end,flex-end);
+            @include flexJustifyContent(center,center,center);
+            padding-bottom: $space-x-small;
+            background-repeat: no-repeat;
+            background-position: 50% 20%;
+            background-size: 50%;
+            border-radius: 6px;
+            @include boxShadow(3px 3px 9px -2px $c-Gray);
+        }
+    }
+
 }
 
-.tools h2,
-.tools h3, 
-.tools__block {
-    margin: 0 0 0 $space-12P;
-}
 
-.tools__block {
-    position: relative;
-    padding-top: $space-xl-small;
-    @include displayFlex();
-    max-width: 1050px;
-    @include flexJustifyContent(justify,justify,space-between);
-    @include flexWrap(wrap);
-}
 
-.tools h2 {
-    padding-top: $space-medium-38;
-}
-
-.tools__block > div {
-    background-color: $c-white;
-    font-size: pxToRem(13);
-    text-align: center;
-    width: $standart-120;
-    height: $standart-120;
-    @include displayFlex();
-    @include flexAliginItems(end,end,flex-end);
-    @include flexJustifyContent(center,center,center);
-    padding-bottom: $space-x-small;
-    background-repeat: no-repeat;
-    background-position: 50% 20%;
-    background-size: 50%;
-    border-radius: 6px;
-    @include boxShadow(3px 3px 9px -2px $c-Gray);
-}
-
-.tools .circle_01 {
-    position: absolute;
-    width: 29%;
-    left: 70%;
-    top: 17%;
-}
-.tools .circle_03 {
-    position: absolute;
-    top: -113%;
-    left: -23%;
-    width: 40%;
-}
 
 // Tools -----------------------------------------
 
@@ -63,8 +68,10 @@
 
 
 @media only screen and (max-width: $break-laptop) {
-    .tools .circle_03 {
-        top: -87%;
+    .tools {
+        .circle_03 {
+            top: -87%;
+        }
     }
 }
 @media only screen and (max-width: 1220px) {
@@ -73,89 +80,104 @@
         min-height: $break-450;
     }
 
+    .circle_03 {
+        top: -46%;
+    }
+
     .tools__block {
         width: 70%;
         max-width: 1000px;
-    }
 
-    .tools__block > div {
-        margin-right: $space-6P;
-        margin-bottom: $space-4P;
-    }
-
-    .tools .circle_03 {
-        top: -46%;
+        > div {
+            margin-right: $space-6P;
+            margin-bottom: $space-4P;
+        }
     }
 }
 
 @media only screen and (max-width: $break-mid) {
 
-    .tools__block {
-        width: 80%;
-    }
+    .tools {
+        h2, h3, .tools__block {
+            margin: 0 0 0 $space-8P;
+        }
 
-    .tools h2, .tools h3, .tools__block {
-        margin: 0 0 0 $space-8P;
+        .tools__block {
+            width: 80%;
+        }
+
     }
     
 }
 
 @media only screen and (max-width: $break800) {
 
-    .tools__block {
-        width: 90%;
-    }
+    .tools {
+        h2, h3, .tools__block {
+            margin-left:  $space-6P;
+        }
 
-    .tools h2, .tools h3, .tools__block {
-        margin: 0 0 0 $space-6P;
+        .tools__block {
+            width: 90%;
+        }
+
     }
     
 }
 
 @media only screen and (max-width: $break-tablet) {
 
-    .tools__block {
-        width: 78%;
-    }
+    .tools {
 
-    .tools__block > div {
-        margin-right: $space-4P;
-    }
+        .circle_01 {
+            left: 42%;
+            top: 0%;
+            width: 57%;
+        }
 
-    .tools .circle_01 {
-        left: 42%;
-        top: 0%;
-        width: 57%;
+        .tools__block {
+            width: 78%;
+
+            > div {
+                margin-right: $space-4P;
+            }
+        }
     }
 
 }
 
 @media only screen and (max-width: 524px) {
 
-    .tools h2, .tools h3, .tools__block {
-        margin: 0 $space-10P 0;
+    .tools {
+        h2, h3, .tools__block {
+            margin: 0 $space-10P 0;
+        }
     }
 
 }
 
 @media only screen and (max-width: $break-425) {
 
-    .tools .circle_01 {
-        top: 4%;
-    }
+    .tools  {
+        .circle_01 {
+            top: 4%;
+        }
 
-    .tools__block > div {
-        background-size: 62%;
+        > div {
+            background-size: 62%;
+        }
     }
 
 }
 
 @media only screen and (max-width: 335px) {
 
-    .tools__block > div {
-        width: 110px;
-        height: 110px;
-        background-size: 62%;
+    .tools {
+        .tools__block > div {
+            width: 110px;
+            height: 110px;
+            background-size: 62%;
+        }
     }
 }
 
