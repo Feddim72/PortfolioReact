@@ -5,9 +5,6 @@ const App = () => {
   return (
 
     <HomePage />
-    // <div className="App">
-      
-    // </div>
   );
 }
 
