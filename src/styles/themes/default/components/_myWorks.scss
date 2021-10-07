@@ -207,7 +207,7 @@
     }
 }
 
-    @media only screen and (max-width: $break-500) {
+@media only screen and (max-width: $break-500) {
 
     .my-works {
         .circle_01 {
@@ -220,6 +220,28 @@
     
             .portfolio-block {
                 width: auto;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $break-425) {
+
+    .my-works {
+        .my-works__portfolio {
+            .portfolio {
+                &-effect {
+                    h2 {
+                        font-size: pxToRem(25);
+                        
+                    }
+
+                    span {
+                        font-size: pxToRem(20);
+                        
+                    }
+                }
             }
         }
     }
