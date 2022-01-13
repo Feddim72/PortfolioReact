@@ -26,9 +26,9 @@ const portfolioState = {
 
 let portfolioCase =
     portfolioState.block.map(p => <MyWorksBlock
-        portfolioCase={p.caseImg} nameAlt={p.nameAlt} 
+        portfolioCase={p.caseImg} nameAlt={p.nameAlt}
         bitIcon={bit_bucket_icon}
-        externalIcon={external_link_icon}  />);
+        externalIcon={external_link_icon} />);
 
 
 const MyWorks = (props) => {
@@ -46,10 +46,9 @@ const MyWorks = (props) => {
                 <br />
 
                 <span>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
+                    My portfolio is full of beautiful and diverse projects.
+                    Which can demonstrate my rich experience in creating react applications.
+                    It was a text that will be relevant in the future.
                 </span>
             </div>
 

@@ -12,7 +12,6 @@ import avatarContent from '../../assets/avatar/avatarContent.jpg';
 
 
 
-// dorobic
 const skroll = () => {
     return (
         window.scrollTo(0, 1000)
@@ -50,9 +49,9 @@ const Content = (props) => {
 
                             <p>
                                 <span>
-                                    Passionate Techy and Tech Author
+                                I study the basics of HTML, CSS, JS. 
                                     <br />
-                                    <span> with 3 years of experience within the ﬁeld. </span>
+                                    <span> And use knowledge to create REACT applications. I need have a job, junior front-end react developer. </span>
                                 </span>
                             </p>
                         </div>

@@ -5,8 +5,6 @@ import circle_03_pool from '../../assets/circle/koła_03_pool.png';
 import mail_icon from '../../assets/ico/mail.svg';
 import avatarContact from '../../assets/avatar/avatarContact.jpg';
 
-// import './Contact.css';
-// import './Contact.media.css';
 
 
 
@@ -56,13 +54,9 @@ const Contact = (props) => {
                         <br />
                         <span> username: feddim </span>
                         <br />
-                        <span> description: University Graduate &#124; Software Engineer </span>
+                        <span> description: University YouTube &#124; Software Engineer </span>
                         <br />
-                        <span> homepage: johndoe.github.pl </span>
-                        <br />
-                        <span> repository type: Open-source </span>
-                        <br />
-                        <span> url: github.com &#47; johndoe </span>
+                        <span> homepage: feddim.netlify.app </span>
                     </div>
                 </div>
 
