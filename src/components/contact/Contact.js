@@ -1,18 +1,12 @@
 import React from "react";
-
-
 import circle_03_pool from '../../assets/circle/koła_03_pool.png';
 import mail_icon from '../../assets/ico/mail.svg';
 import avatarContact from '../../assets/avatar/avatarContact.jpg';
 
-
-
-
-
 const Contact = (props) => {
     return (
         <div class="contact" id="page-contact">
-            
+
             <br />
             <br />
 
@@ -28,13 +22,13 @@ const Contact = (props) => {
 
                 <img class="contact__circle_03" src={circle_03_pool} alt="contact_me_circle_03" />
 
-                <form action="">
+                <form name="contact" method="POST" data-netlify="true">
                     <div>
                         <input class="input" type="email" placeholder="Your e-mail" />
                         <input type="text" placeholder="Your name" />
                         <textarea placeholder="How can I help you?
-    Please, put here your
-    message/request."></textarea>
+                        Please, put here your
+                        message/request."></textarea>
                     </div>
 
                     <div>

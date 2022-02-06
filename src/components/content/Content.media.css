@@ -132,11 +132,6 @@
         max-width: 334px;
     }
 
-    /* .about__interests 
-    div:nth-child(2) p {
-        width: 300px;
-    } */
-
     .about__interests img {
         width: 176px;
     }
@@ -604,7 +599,7 @@
         bottom: 390px;
     }
 
-    .about__skills-name .php {
+    .about__skills-name .ts {
         min-width: 100px;
     }
 
@@ -612,7 +607,7 @@
         min-width: 132px;
     }
 
-    .about__skills-name .go {
+    .about__skills-name .scss {
         min-width: 88px;
     }
 
@@ -716,7 +711,7 @@
         height: 31px;
     }
 
-    .about__skills-name .php {
+    .about__skills-name .ts {
         min-width: 88px;
     }
 
@@ -724,7 +719,7 @@
         min-width: 114px;
     }
 
-    .about__skills-name .go {
+    .about__skills-name .scss {
         min-width: 76px;
     }
 

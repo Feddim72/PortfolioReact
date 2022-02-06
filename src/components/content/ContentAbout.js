@@ -67,23 +67,23 @@ const ContentAbout = (props) => {
                 </div>
 
                 <div className="about__skills-name">
-                    <div className="php">
-                        <span> PHP 1% </span>
-                    </div>
                     <div className="js">
-                        <span>JS 60% </span>
+                        <span>JS 80% </span>
+                    </div>
+                    <div className="ts">
+                        <span>TypeScript 20% </span>
                     </div>
                     <div className="html">
-                        <span>HTML 81% </span>
+                        <span>HTML 90% </span>
                     </div>
                     <div className="nodejs">
                         <span>NODEJS 1% </span>
                     </div>
                     <div className="css">
-                        <span>CSS 85% </span>
+                        <span>CSS 89% </span>
                     </div>
-                    <div className="go">
-                        <span>GO 1%</span>
+                    <div className="scss">
+                        <span> SCSS 83%</span>
                     </div>
                 </div>
             </div>

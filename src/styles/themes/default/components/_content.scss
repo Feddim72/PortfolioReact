@@ -293,9 +293,9 @@
                         @include boxShadow(3px 3px 9px -2px $c-Gray);
                     }
                     
-                    .php {
-                        width: 1%;
-                        min-width: 112px;
+                    .ts {
+                        width: 20%;
+                        min-width: 185px;
                     }
                     
                     .js {
@@ -315,8 +315,8 @@
                         width: 85%;
                     }
                     
-                    .go {
-                        width: 1%;
+                    .scss {
+                        width: 83%;
                         min-width: 95px;
                     }
                     
@@ -910,7 +910,7 @@
                         height: 40px;
                     }
 
-                    .php {
+                    .ts {
                         min-width: $standart-100;
                     }
                     
@@ -918,7 +918,7 @@
                         min-width: 132px;
                     }
 
-                    .go {
+                    .scss {
                         min-width: 88px;
                     }
 
@@ -999,7 +999,7 @@
                             height: 31px;
                         }
     
-                        .php {
+                        .ts {
                             min-width: 88px;
                         }
     
@@ -1007,7 +1007,7 @@
                             min-width: 114px;
                         }
     
-                        .go {
+                        .scss {
                             min-width: 76px;
                         }
     

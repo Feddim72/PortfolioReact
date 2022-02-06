@@ -10,14 +10,11 @@ import bit_bucket_icon from '../../assets/ico/bit_bucket_icon.png';
 import dev_icon from '../../assets/ico/dev_icon.png';
 import avatarContent from '../../assets/avatar/avatarContent.jpg';
 
-
-
 const skroll = () => {
     return (
         window.scrollTo(0, 1000)
     )
 }
-
 
 const Content = (props) => {
     return (
@@ -49,7 +46,7 @@ const Content = (props) => {
 
                             <p>
                                 <span>
-                                I study the basics of HTML, CSS, JS. 
+                                    I study the basics of HTML, CSS, JS.
                                     <br />
                                     <span> And use knowledge to create REACT applications. I need have a job, junior front-end react developer. </span>
                                 </span>
