@@ -24,9 +24,9 @@ const Contact = (props) => {
 
                 <form name="contact" method="POST" data-netlify="true">
                     <div>
-                        <input class="input" type="email" placeholder="Your e-mail" />
-                        <input type="text" placeholder="Your name" />
-                        <textarea placeholder="How can I help you?
+                        <input class="input" type="email" name="email" placeholder="Your e-mail" />
+                        <input type="text" name="user-name" placeholder="Your name" />
+                        <textarea name="message" placeholder="How can I help you?
                         Please, put here your
                         message/request."></textarea>
                     </div>
