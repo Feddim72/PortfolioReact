@@ -22,7 +22,7 @@ const Contact = (props) => {
 
                 <img class="contact__circle_03" src={circle_03_pool} alt="contact_me_circle_03" />
 
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
                     <div>
                         <input class="input" type="email" name="email" placeholder="Your e-mail" />
                         <input type="text" name="user-name" placeholder="Your name" />
