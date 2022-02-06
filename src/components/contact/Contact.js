@@ -5,14 +5,14 @@ import avatarContact from '../../assets/avatar/avatarContact.jpg';
 
 const Contact = (props) => {
     return (
-        <div class="contact" id="page-contact">
+        <div className="contact" id="page-contact">
 
             <br />
             <br />
 
             <div>
                 <div>
-                    <h2 class="general-title general-title--black"> &#47;&#47;Contact me </h2>
+                    <h2 className="general-title general-title--black"> &#47;&#47;Contact me </h2>
                     <br />
                     <span>
                         If you are willing to work with me, contact me. I can join your
@@ -20,13 +20,12 @@ const Contact = (props) => {
                     </span>
                 </div>
 
-                <img class="contact__circle_03" src={circle_03_pool} alt="contact_me_circle_03" />
+                <img className="contact__circle_03" src={circle_03_pool} alt="contact_me_circle_03" />
 
-                <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
-                    <input type="hidden" name="form-name" value="contact" />
+                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
                     <div>
-                        <input class="input" type="email" name="email" placeholder="Your e-mail" />
-                        <input type="text" name="user-name" placeholder="Your name" />
+                        <input className="input" type="email" name="email" placeholder="Your e-mail" />
+                        <input type="text" name="name" placeholder="Your name" />
                         <textarea name="message" placeholder="How can I help you?
                         Please, put here your
                         message/request." />
@@ -38,8 +37,8 @@ const Contact = (props) => {
                 </form>
             </div>
 
-            <div class="contact__autor">
-                <div class="contact__name">
+            <div className="contact__autor">
+                <div className="contact__name">
                     <div>
                         <img src={avatarContact} alt="avatar_autor" />
                     </div>
@@ -55,7 +54,7 @@ const Contact = (props) => {
                     </div>
                 </div>
 
-                <div class="contact__mail">
+                <div className="contact__mail">
                     <div>
                         <img src={mail_icon} alt="mail_autor" />
                     </div>
