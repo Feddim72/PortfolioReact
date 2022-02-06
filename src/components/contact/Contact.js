@@ -22,7 +22,7 @@ const Contact = (props) => {
 
                 <img className="contact__circle_03" src={circle_03_pool} alt="contact_me_circle_03" />
 
-                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <div>
                         <input className="input" type="email" name="email" placeholder="Your e-mail" />
