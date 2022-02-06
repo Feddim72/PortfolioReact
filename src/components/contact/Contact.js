@@ -27,7 +27,7 @@ const Contact = (props) => {
                     <div>
                         <input className="input" type="email" name="email" placeholder="Your e-mail" />
                         <input type="text" name="name" placeholder="Your name" />
-                        <textarea name="message" placeholder="How can I help you?
+                        <textarea name="message" placeholder=" How can I help you?
                         Please, put here your
                         message/request." />
                     </div>

@@ -46,9 +46,9 @@ const Content = (props) => {
 
                             <p>
                                 <span>
-                                    I study the basics of HTML, CSS, JS.
+                                    I will create a high-quality web application for you, any complexity.
                                     <br />
-                                    <span> And use knowledge to create REACT applications. I need have a job, junior front-end react developer. </span>
+                                    <span> You can see my work below. </span>
                                 </span>
                             </p>
                         </div>

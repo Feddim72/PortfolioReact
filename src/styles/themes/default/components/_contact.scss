@@ -27,15 +27,19 @@
         position: relative;
         @include displayFlex();
 
+        input[type=hidden] { 
+            display: none; 
+        }
+
         div{    
-            &:nth-child(1) {
+            &:nth-child(2) {
                 @include displayFlex();
                 @include flexWrap(wrap);
                 max-width: 62vh;
                 padding-top: $space-1_5P;
             }
 
-            &:nth-child(2){
+            &:nth-child(3){
                 @include displayFlex();
                 @include flexAliginItems(end, end, flex-end);
                 margin-left: $space-3P;
@@ -63,6 +67,7 @@
         padding-top: $space-3P;
         margin-bottom: 0;
     }
+        
 
     .contact{
         &__autor {
