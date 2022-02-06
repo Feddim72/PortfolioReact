@@ -29,7 +29,7 @@ const Contact = (props) => {
                         <input type="text" name="user-name" placeholder="Your name" />
                         <textarea name="message" placeholder="How can I help you?
                         Please, put here your
-                        message/request."></textarea>
+                        message/request." />
                     </div>
 
                     <div>
